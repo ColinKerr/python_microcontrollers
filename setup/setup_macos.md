@@ -46,8 +46,8 @@ The firmware is located in [setup/Python_Firmware/ESP32_GENERIC_S3-SPIRAM_OCT-20
 1. Connect the ESP32-S3 WROOM to your Mac via USB cable.
     - Use the right hand USB3 connection on the microcontroller
     - If the blue light is blinking when connected press the reset (RST) button
-2. Open Finder and navigate to `Freenove_Ultimate_Starter_Kit_for_ESP32_S3/Python/Python_Firmware`.
-3. Right-click the folder and select **New Terminal at Folder**.
+2. Open Finder and navigate to `setup` folder.
+3. Right-click the `Python_Firmware` folder and select **New Terminal at Folder**.
 4. In the Terminal, run:
    ```bash
    python3 mac.py
