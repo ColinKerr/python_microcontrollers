@@ -1,4 +1,6 @@
-### Run Offline (auto-run on power-up)
+# Advanced Setup
+
+## Offline Mode
 
 To have the ESP32-S3 run code automatically after reset or power-on:
 

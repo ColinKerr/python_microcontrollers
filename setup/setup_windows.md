@@ -42,6 +42,8 @@ The ESP32-S3 needs MicroPython firmware flashed onto it before you can run Pytho
 
 The firmware is located in [setup/Python_Firmware/ESP32_GENERIC_S3-SPIRAM_OCT-20250809-v1.26.0.bin](./Python_Firmware/ESP32_GENERIC_S3-SPIRAM_OCT-20250809-v1.26.0.bin)
 
+![How To connect board via USB](../images/usb_connection.png)
+
 **Flash the firmware:**
 
 1. Connect the ESP32-S3 WROOM to your computer via USB.
@@ -85,7 +87,7 @@ Press **Enter**. If `hello world` is printed back, the connection is working cor
 ### Run Online (while connected to PC)
 
 1. In Thonny, click **Open…** → **This computer**.
-2. Navigate to [first_examples/hello_world.py](../first_examples/hello_world.py)
+2. Navigate to [first_examples/code/hello_world.py](../first_examples/code/HelloWorld.py)
 3. Click **Run current script** (green play button).
 
 > Note: If you press the reset button on the ESP32-S3 while running online, the code will not restart automatically.
