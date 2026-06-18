@@ -4,6 +4,10 @@
 
 On most Linux distributions, the CH343 USB-to-serial driver is included in the kernel and loads automatically when the ESP32-S3 is connected. No manual driver installation is typically required.
 
+Connect the microcontroller
+
+![How To connect board via USB](../images/usb_connection.png)
+
 To verify the device is recognized after connecting via USB:
 ```bash
 ls /dev/ttyUSB* /dev/ttyACM*
@@ -11,17 +15,17 @@ ls /dev/ttyUSB* /dev/ttyACM*
 
 You should see a device such as `/dev/ttyUSB0` or `/dev/ttyACM0`.
 
-**If you get a permission denied error when connecting Thonny**, add your user to the `dialout` group:
+**To ensure you have permissions to access the microcontroller**, add your user to the `dialout` group then log out or restart:
 ```bash
 sudo usermod -aG dialout $USER
 ```
-Then log out and back in for the change to take effect.
 
----
+>**Don't forget to log out and back in for the change to take effect.**
+
 
 ## 2. Install Thonny IDE
 
-Thonny is the recommended Python IDE for programming the ESP32-S3 with MicroPython. Choose one of the following installation methods:
+Thonny is the recommended Python IDE for programming the ESP32-S3 with MicroPython. Use the app store for your flavor of linux or Choose one of the command line installation methods below:
 
 **Recommended installer** (installs a private Python 3.10 on x86_64):
 ```bash
@@ -82,7 +86,7 @@ The firmware is located in [setup/Python_Firmware/ESP32_GENERIC_S3-SPIRAM_OCT-20
 1. Connect the ESP32-S3 WROOM to your computer via USB cable.
 2. Open a terminal in the `Python_Firmware` folder:
    ```bash
-   cd path/to/python_microcontrollers/setup/Python_Firmware
+   cd ~/python_microcontrollers/setup/Python_Firmware
    ```
 3. Run the firmware script (same script as macOS):
    ```bash
@@ -120,7 +124,7 @@ Press **Enter**. If `hello world` is printed back, the connection is working cor
 ### Run Online (while connected to PC)
 
 1. In Thonny, click **Open…** → **This computer**.
-2. Navigate to [first_examples/code/hello_world.py](../first_examples/code/HelloWorld.py)
+2. Navigate to [first_examples/code/HelloWorld.py](../first_examples/code/HelloWorld.py)
 3. Click **Run current script** (green play button).
 
 > Note: If you press the reset button on the ESP32-S3 while running online, the code will not restart automatically.

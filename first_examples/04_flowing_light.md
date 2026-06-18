@@ -67,7 +67,7 @@ while True:
 ## How to Run
 
 ### Online
-1. Open Thonny → `Micropython_Codes/03.1_FlowingLight/`.
+1. Open Thonny → `first_examples/code/`.
 2. Double-click `FlowingLight.py`.
 3. Click **Run current script** — LEDs sweep left to right, then right to left.
 

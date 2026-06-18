@@ -44,7 +44,7 @@ The internal pull-up (`Pin.PULL_UP`) in software replaces the need for an extern
 
 ## Code
 
-**File:** [`first_examples/code/ButtonAndLed.py](./code/ButtonAndLed.py)
+**File:** [`first_examples/code/ButtonAndLed.py`](./code/ButtonAndLed.py)
 
 ```python
 from machine import Pin

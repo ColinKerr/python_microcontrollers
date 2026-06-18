@@ -5,15 +5,11 @@ Toggle an LED on and off with a push button — press once to turn ON, press aga
 
 Uses the same components and circuit as Project 3
 
-New Concepts
--  debouncing
+## New Concepts
+- debouncing
 - functions
 
-## Component List & Circuit Diagram
-
-*Circuit and components are identical to Project 3*
-
-## Concept: Debouncing
+### Concept: Debouncing
 
 When a push button is pressed or released, the mechanical contacts briefly bounce — rapidly switching between connected and disconnected many times before settling. This is invisible to humans but causes a microcontroller to register multiple presses in one action.
 
@@ -21,7 +17,7 @@ When a push button is pressed or released, the mechanical contacts briefly bounc
 
 **Solution:** After detecting a press, wait 20ms and check again. If still pressed, treat it as a genuine button press. This filters out the noise from bouncing.
 
-## Concept: Functions
+### Concept: Functions
 
 A function encapsulates code so it can be used multiple times using just the function name.  It also makes code easier to read and understand.
 
@@ -40,6 +36,10 @@ Calling a function
 ```python
 reverseGPIO()
 ```
+
+## Component List & Circuit Diagram
+
+*Circuit and components are identical to Project 3*
 
 ## Code
 

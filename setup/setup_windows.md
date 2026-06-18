@@ -87,7 +87,7 @@ Press **Enter**. If `hello world` is printed back, the connection is working cor
 ### Run Online (while connected to PC)
 
 1. In Thonny, click **Open…** → **This computer**.
-2. Navigate to [first_examples/code/hello_world.py](../first_examples/code/HelloWorld.py)
+2. Navigate to [first_examples/code/HelloWorld.py](../first_examples/code/HelloWorld.py)
 3. Click **Run current script** (green play button).
 
 > Note: If you press the reset button on the ESP32-S3 while running online, the code will not restart automatically.
