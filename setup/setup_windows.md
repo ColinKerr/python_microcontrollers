@@ -53,7 +53,7 @@ The firmware is located in [setup/Python_Firmware/ESP32_GENERIC_S3-SPIRAM_OCT-20
 3. Click on the address bar, type `cmd`, and press **Enter** to open a Command Prompt in that folder.
 4. Run the following command:
    ```
-   python window.py
+   python windows.py
    ```
 5. Wait for the firmware to finish burning. You will see a completion message when done.
 
@@ -87,7 +87,7 @@ Press **Enter**. If `hello world` is printed back, the connection is working cor
 ### Run Online (while connected to PC)
 
 1. In Thonny, click **Open…** → **This computer**.
-2. Navigate to [first_examples/code/HelloWorld.py](../first_examples/code/HelloWorld.py)
+2. Navigate to [01_first_examples/code/HelloWorld.py](../01_first_examples/code/HelloWorld.py)
 3. Click **Run current script** (green play button).
 
 > Note: If you press the reset button on the ESP32-S3 while running online, the code will not restart automatically.

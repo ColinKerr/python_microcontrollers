@@ -81,7 +81,7 @@ except:
 ## How to Run
 
 ### Online (while connected to PC)
-1. Open Thonny and navigate to `first_examples/code`.
+1. Open Thonny and navigate to `01_first_examples/code`.
 2. Double-click `Blink.py`.
 3. Click **Stop/Restart backend**, wait for connection.
 4. Click **Run current script** — the external LED starts blinking.
@@ -94,3 +94,6 @@ Circuits can be represented with a wiring diagram like we saw above or a schemat
 Here is a schematic for this circuit
 
 ![Schematic Diagram](../images/02_schematic_diagram.png)
+
+
+> Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 1.2

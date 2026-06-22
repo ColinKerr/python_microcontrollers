@@ -43,7 +43,7 @@ reverseGPIO()
 
 ## Code
 
-**File:** [`first_examples/code/ButtonAndLed_OnOffSwitch.py`](./code/ButtonAndLed_OneOffSwitch.py)
+**File:** [`01_first_examples/code/ButtonAndLed_OnOffSwitch.py`](./code/ButtonAndLed_OneOffSwitch.py)
 
 ```python
 import time
@@ -70,7 +70,7 @@ while True:
 ## How to Run
 
 ### Online
-1. Open Thonny → `first_examples/code/`.
+1. Open Thonny → `01_first_examples/code/`.
 2. Double-click `ButtonAndLed_OnOffSwitch.py`.
 3. Click **Run current script**.
 4. Press the button — LED toggles ON/OFF with each press.
@@ -113,3 +113,5 @@ Step 5 prevents the LED from toggling again while the button is held down — th
 ## Further Exploration
 
 - Rename the `reverseGPIO` button to something more descriptive.  For example `toggleLED`.
+
+> Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 2.2

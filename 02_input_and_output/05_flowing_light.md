@@ -35,7 +35,7 @@ Each LED anode connects to its GPIO pin. Each cathode connects to GND through a 
 
 ## Code
 
-**File:** [`first_examples/code/FlowingLight.py](./code/FlowingLight.py)
+**File:** [`01_first_examples/code/FlowingLight.py](./code/FlowingLight.py)
 
 ```python
 import time
@@ -67,7 +67,7 @@ while True:
 ## How to Run
 
 ### Online
-1. Open Thonny → `first_examples/code/`.
+1. Open Thonny → `01_first_examples/code/`.
 2. Double-click `FlowingLight.py`.
 3. Click **Run current script** — LEDs sweep left to right, then right to left.
 
@@ -120,3 +120,5 @@ Iterates from `start` up to (but not including) `end`, incrementing by `step` ea
 range(0, 5)      # → 0, 1, 2, 3, 4
 range(0, 10, 2)  # → 0, 2, 4, 6, 8
 ```
+
+> Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 3.1

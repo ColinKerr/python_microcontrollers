@@ -44,7 +44,7 @@ The internal pull-up (`Pin.PULL_UP`) in software replaces the need for an extern
 
 ## Code
 
-**File:** [`first_examples/code/ButtonAndLed.py`](./code/ButtonAndLed.py)
+**File:** [`01_first_examples/code/ButtonAndLed.py`](./code/ButtonAndLed.py)
 
 ```python
 from machine import Pin
@@ -107,3 +107,5 @@ else:
 ## Further Exploration
 
 - Modify code so LED blinks when button is pressed and is solid on when button is not pressed.
+
+> Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 2.1
