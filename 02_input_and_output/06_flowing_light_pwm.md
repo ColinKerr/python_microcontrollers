@@ -15,6 +15,10 @@ The ESP32-S3's PWM (LEDC) controller only has 8 independent channels. The origin
 
 Any `.py` file saved onto the ESP32-S3 can be imported as a module, as long as it lives alongside the script that imports it (or on the MicroPython module search path). This project defines a small PWM helper class in `pwm.py` and imports it with `from pwm import myPWM` — so `pwm.py` has to be uploaded to the device too, not just the main script.
 
+### Concept: Nested `for` loops
+
+
+
 ---
 
 ## Component List
