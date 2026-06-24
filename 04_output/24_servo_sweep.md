@@ -26,7 +26,7 @@ A servo has 3 wires: power (red, VCC), ground (brown, GND), and signal (orange).
 
 ## Component List
 
-![Components](image.png)
+![Components](../images/24_components.png)
 
 ---
 

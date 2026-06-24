@@ -34,6 +34,8 @@ On the ESP32-S3, the PWM (LEDC) controller has 8 channels, each independently co
 
 ## Circuit
 
+> NOTE: If you have the circuit setup for [03 Button and LED](./03_button_and_led.md) you can leave the button connected for this project.
+
 ### Wiring Diagram
 
 ![Wiring Diagram](../images/02_wiring_diagram.png)
@@ -127,7 +129,8 @@ except:
 
 ## Further Exploration
 
-- Change `time.sleep_ms(1)` to a smaller or larger value — how does it affect the breathing speed?
-- Change the PWM frequency (10000) — can you hear or see a difference?
+- Modify the code so the LED takes longer to get get brighter than it takes to dim.
+- Change the PWM frequency (10000) — can slow it down enough to be visible?
+- If you left the button connected from project 3 does the button work?  Why or why not?
 
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 4.1

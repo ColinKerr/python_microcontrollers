@@ -34,7 +34,7 @@ Left pins (1 & 2) are always connected to each other; right pins (3 & 4) are alw
 
 ### Schematic Diagram
 
-![Schematic Diagram](image.png)
+![Schematic Diagram](../images/03_schematic_diagram.png)
 
 The internal pull-up (`Pin.PULL_UP`) in software replaces the need for an external pull-up resistor in this case, but the schematic uses external resistors for clarity.
 
@@ -97,7 +97,6 @@ else:
     led.value(0)
 ```
 
-
 ## Key Concepts
 
 - **Input → Control → Output** pattern: button (input) → ESP32-S3 (control) → LED (output)
@@ -106,6 +105,7 @@ else:
 
 ## Further Exploration
 
-- Modify code so LED blinks when button is pressed and is solid on when button is not pressed.
+- Modify code so the LED is normally on and turns off when the button is pressed.~
+- Modify code so the LED blinks when button is pressed and is solid on when button is not pressed.
 
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 2.1

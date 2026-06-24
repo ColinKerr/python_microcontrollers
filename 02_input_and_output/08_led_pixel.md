@@ -14,7 +14,7 @@ The module packs 8 WS2812 LEDs, each with its own red, green, and blue element (
 
 ## Component List
 
-![Components](image.png)
+![Components](../images/08_components.png)
 ---
 
 ## Circuit

@@ -9,7 +9,7 @@ Combine the [DHT11](../03_sensors/17_hygrothermograph_dht11.md) and [LCD1602](./
 
 ## Component List
 
-![Components](image.png)
+![Components](../images/27_components.png)
 
 ## Circuit
 

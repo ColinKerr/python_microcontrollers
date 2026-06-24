@@ -117,7 +117,8 @@ See [Class Chip74HC595](../reference/Class_Chip74HC595.md) for the full API refe
 
 ## Further Exploration
 
-- Add lowercase letters or other displayable patterns to `lists`.
-- Use `chip.shiftOut(0, lists[n] & 0x7F)` to also light the decimal point.
+- Modify the list to have it start with all segments off and light up one segment at a time until they are all lit.
+- Come up with your own animation by changing the entries in the list.
+- Modify the loop to turn on every combination of segments.
 
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 15.1

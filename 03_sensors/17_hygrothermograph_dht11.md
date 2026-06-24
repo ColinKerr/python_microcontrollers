@@ -25,15 +25,13 @@ The sensor takes about 1 second to initialize after power-up.
 
 ## Component List
 
-![Components](image.png)
+![Components](../images/17_components.png)
 
 ---
 
 ## Circuit
 
-### Schematic Diagram
-
-![Schematic Diagram](../images/17_schematic_diagram.png)
+> Disconnect all power before building the circuit. Reconnect once verified.
 
 ### Wiring Diagram
 
@@ -45,7 +43,9 @@ The sensor takes about 1 second to initialize after power-up.
 - DHT11 NC → not connected
 - DHT11 GND → GND
 
-> Disconnect all power before building the circuit. Reconnect once verified.
+### Schematic Diagram
+
+![Schematic Diagram](../images/17_schematic_diagram.png)
 
 ---
 

@@ -24,7 +24,7 @@ In short: treat it as a motion-activated digital switch, just like a [push butto
 
 ## Component List
 
-![Components](image.png)
+![Components](../images/18_components.png)
 
 ---
 
