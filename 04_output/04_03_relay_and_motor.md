@@ -5,7 +5,8 @@ Use a push button to toggle a relay on and off, switching power to a DC motor �
 ## New Concepts
 - Relays as power switches
 - Driving a relay coil with a transistor
-- Flyback diodes
+- FLyback diode
+- DC Motor
 
 ### Component Knowledge: Relay
 
@@ -41,6 +42,8 @@ A small DC motor has two pins; connecting them to power spins it one way, and re
 
 ### Wiring Diagram
 
+> Disconnect all power before building the circuit. Reconnect once verified.
+
 ![Wiring Diagram](../images/04_03_wiring_diagram.png)
 
 **Connections:**
@@ -52,10 +55,6 @@ A small DC motor has two pins; connecting them to power spins it one way, and re
 ### Schematic Diagram
 
 ![Schematic Diagram](../images/04_03_schematic_diagram.png)
-
-> Disconnect all power before building the circuit. Reconnect once verified.
-
----
 
 ## Code
 
@@ -83,7 +82,7 @@ while True:
               time.sleep_ms(20)
 ```
 
-This is the exact same toggle-and-debounce pattern as [Button and LED On/Off Switch](../01_first_examples/03a_button_and_led_on_off.md)'s `reverseGPIO()` — only the pin being toggled has changed, from an LED to a relay coil.
+This is the exact same toggle-and-debounce pattern as [Button and LED On/Off Switch](../01_first_examples/01_03a_button_and_led_on_off.md)'s `reverseGPIO()` — only the pin being toggled has changed, from an LED to a relay coil.
 
 ---
 
@@ -98,7 +97,7 @@ This is the exact same toggle-and-debounce pattern as [Button and LED On/Off Swi
 
 ## Code Explanation
 
-See [Button and LED On/Off Switch](../01_first_examples/03a_button_and_led_on_off.md#code-explanation) for a full walkthrough of the debounce-and-toggle logic — `reverseRelay()` here is identical to that project's `reverseGPIO()`, just renamed. The only new idea is what's on the other end of the pin: instead of directly driving an LED, GPIO14 drives a transistor, which drives the relay coil, which switches the motor's much higher-power circuit.
+See [Button and LED On/Off Switch](../01_first_examples/01_03a_button_and_led_on_off.md#code-explanation) for a full walkthrough of the debounce-and-toggle logic — `reverseRelay()` here is identical to that project's `reverseGPIO()`, just renamed. The only is the electrical circuit: instead of directly driving an LED, GPIO14 drives a transistor, which drives the relay coil, which switches the motor's much higher-power circuit.
 
 ---
 
@@ -107,7 +106,7 @@ See [Button and LED On/Off Switch](../01_first_examples/03a_button_and_led_on_of
 - **Relays**: let a low-power digital signal switch a completely separate high-power circuit
 - **Transistor as a digital switch**: a GPIO pin alone usually can't supply enough current to drive a relay coil directly — a transistor amplifies that small control current into enough to energize the coil
 - **Flyback diodes**: protect driving circuitry from voltage spikes generated when current through an inductive load (like a relay coil) is suddenly cut off
-- **Reusable toggle pattern**: the debounce/toggle code from [Button and LED On/Off Switch](../01_first_examples/03a_button_and_led_on_off.md) works unchanged for any digital output, not just LEDs
+- **Reusable toggle pattern**: the debounce/toggle code from [Button and LED On/Off Switch](../01_first_examples/01_03a_button_and_led_on_off.md) works unchanged for any digital output, not just LEDs
 
 ## Further Exploration
 

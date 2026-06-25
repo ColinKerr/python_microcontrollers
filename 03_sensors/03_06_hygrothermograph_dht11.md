@@ -8,7 +8,7 @@ Read temperature and humidity from a DHT11 sensor and print both to the Shell.
 
 ### Component Knowledge: DHT11
 
-The DHT11 is a combined temperature and humidity sensor whose output is already calibrated by the manufacturer — no formulas or lookup tables needed, unlike the [Thermistor](./13_thermometer.md). It uses a custom single-wire protocol to send data, so reading it relies on the `dht` driver module rather than a plain GPIO read.
+The DHT11 is a combined temperature and humidity sensor whose output is already calibrated by the manufacturer — no formulas or lookup tables needed, unlike the [Thermistor](./03_02_thermometer.md). It uses a custom single-wire protocol to send data, so reading it relies on the `dht` driver module rather than a plain GPIO read.
 
 ![DHT11 component](../images/dht11_component.png)
 
@@ -112,13 +112,13 @@ DHT11 reads occasionally fail (the single-wire timing is sensitive to interferen
 ## Key Concepts
 
 - **Single-wire protocols**: some sensors send all their data over one data pin with precise timing, rather than a standard bus like I2C or UART — these require a dedicated driver module instead of plain GPIO reads
-- **Calibrated sensors**: the DHT11 returns ready-to-use temperature/humidity values directly, unlike the [Thermistor](./13_thermometer.md), which needs a manual formula to convert resistance into temperature
+- **Calibrated sensors**: the DHT11 returns ready-to-use temperature/humidity values directly, unlike the [Thermistor](./03_02_thermometer.md), which needs a manual formula to convert resistance into temperature
 
 See [Class dht](../reference/Class_dht.md) for the full API reference.
 
 ## Further Exploration
 
 - Average several readings to smooth out occasional bad samples.
-- Combine this with [Soft Light](../02_input_and_output/11_soft_light.md)'s PWM technique to drive a fan or heater indicator based on temperature.
+- Combine this with [Soft Light](../02_input_and_output/02_07_soft_light.md)'s PWM technique to drive a fan or heater indicator based on temperature.
 
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 24.1

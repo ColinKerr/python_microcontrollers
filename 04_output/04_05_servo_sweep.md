@@ -36,6 +36,8 @@ A servo has 3 wires: power (red, VCC), ground (brown, GND), and signal (orange).
 
 ### Wiring Diagram
 
+> Disconnect all power before building the circuit. Reconnect once verified.
+
 ![Wiring Diagram](../images/04_05_wiring_diagram.png)
 
 **Connections:**
@@ -47,10 +49,6 @@ A servo has 3 wires: power (red, VCC), ground (brown, GND), and signal (orange).
 ### Schematic Diagram
 
 ![Schematic Diagram](../images/04_05_schematic_diagram.png)
-
-> Disconnect all power before building the circuit. Reconnect once verified.
-
----
 
 ## Code
 
@@ -110,7 +108,7 @@ for i in range(180,0,-1):
     servo.myServoWriteAngle(i)
     time.sleep_ms(15)
 ```
-Each loop steps the angle one degree at a time with a short pause, producing a smooth sweep rather than an instant jump (the same "ramp gradually" idea as [Breathing LED](../01_first_examples/04_breathing_LED.md)'s PWM fade, just applied to angle instead of brightness).
+Each loop steps the angle one degree at a time with a short pause, producing a smooth sweep rather than an instant jump (the same "ramp gradually" idea as [Breathing LED](../01_first_examples/01_04_breathing_LED.md)'s PWM fade, just applied to angle instead of brightness).
 
 ### Release the servo
 
@@ -132,6 +130,5 @@ See [class myServo](../reference/class_myServo/Servo.md) for the full API refere
 ## Further Exploration
 
 - Change the step size (e.g. `range(0,180,5)`) for a faster, choppier sweep.
-- Combine this with [Read the Voltage of a Potentiometer](../02_input_and_output/10_read_voltage_potentiometer.md) to manually control the angle instead of auto-sweeping — see [Servo Knob](./25_servo_knob.md).
 
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 18.1

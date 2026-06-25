@@ -12,7 +12,11 @@ A photoresistor (LDR) is a light-sensitive resistor — its resistance drops as 
 
 ![Photoresistor component](../images/photoresistor_component.png)
 
-Pairing it with a fixed resistor in a voltage divider turns that resistance change into a voltage change, which the ADC can read: as ambient light changes, the photoresistor's resistance changes, which shifts the voltage measured between it and the fixed resistor.
+Pairing it with a fixed resistor in a voltage divider turns that resistance change into a voltage change, which the ADC can read.  
+
+![Voltage Divider](../images/voltage_divider.png)
+
+As ambient light changes, the photoresistor's resistance changes, which shifts the voltage measured between it and the fixed resistor.
 
 ---
 
@@ -25,6 +29,8 @@ Pairing it with a fixed resistor in a voltage divider turns that resistance chan
 
 ### Wiring Diagram
 
+> Disconnect all power before building the circuit. Reconnect once verified.
+
 ![Wiring Diagram](../images/03_01_wiring_diagram.png)
 
 **Connections:**
@@ -35,10 +41,6 @@ Pairing it with a fixed resistor in a voltage divider turns that resistance chan
 ### Schematic Diagram
 
 ![Schematic Diagram](../images/03_01_schematic_diagram.png)
-
-> Disconnect all power before building the circuit. Reconnect once verified.
-
----
 
 ## Code
 
@@ -68,7 +70,7 @@ except:
     pwm.deinit()
 ```
 
-This is the exact same code as [Soft Light](../02_input_and_output/11_soft_light.md) — only the sensor wired to GPIO1 has changed.
+This is the exact same code as [Soft Light](../02_input_and_output/02_07_soft_light.md) — only the sensor wired to GPIO1 has changed.
 
 ---
 
@@ -83,7 +85,7 @@ This is the exact same code as [Soft Light](../02_input_and_output/11_soft_light
 
 ## Code Explanation
 
-Since the circuit and code are logically identical to Soft Light, see [Soft Light's Code Explanation](../02_input_and_output/11_soft_light.md#code-explanation) for a full walkthrough of `remap()` and the ADC → PWM pipeline. The only conceptual difference: the ADC value now reflects ambient light level instead of a knob's position, and because the photoresistor's resistance *drops* in bright light, more light produces a lower voltage on GPIO1 — which remaps to a lower PWM duty, dimming the LED in bright conditions and brightening it in the dark.
+Since the circuit and code are logically identical to Soft Light, see [Soft Light's Code Explanation](../02_input_and_output/02_07_soft_light.md#code-explanation) for a full walkthrough of `remap()` and the ADC → PWM pipeline. The only conceptual difference: the ADC value now reflects ambient light level instead of a knob's position, and because the photoresistor's resistance *drops* in bright light, more light produces a lower voltage on GPIO1 — which remaps to a lower PWM duty, dimming the LED in bright conditions and brightening it in the dark.
 
 ---
 
@@ -91,13 +93,13 @@ Since the circuit and code are logically identical to Soft Light, see [Soft Ligh
 
 - **Photoresistor (LDR)**: a resistor whose resistance changes with light intensity
 - **Voltage divider sensing**: pairing a variable resistor with a fixed one converts a resistance change into a readable voltage change
-- **Reusing a pipeline**: the same ADC → `remap()` → PWM code from Soft Light works unchanged with a different sensor, because both produce a 0–4095 ADC reading
+- **Reusing code**: the same ADC → `remap()` → PWM code from Soft Light works unchanged with a different sensor, because both produce a 0–4095 ADC reading
 
 See [Class ADC](../reference/Class_ADC.md) and [Class PWM(pin, freq)](../reference/Class_PWM(pin,freq).md) for the full API reference.
 
 ## Further Exploration
 
-- Invert the brightness response (LED dims in the dark instead) by changing `remap(adcValue,0,4095,0,1023)` to `remap(adcValue,0,4095,1023,0)`.
+- Invert the brightness response (LED dims in the dark instead).
 - Add a threshold so the LED only turns on below a certain light level, instead of dimming continuously.
 
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 11.1

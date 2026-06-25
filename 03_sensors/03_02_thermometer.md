@@ -8,7 +8,7 @@ Build a digital thermometer using a thermistor — a resistor whose resistance c
 
 ### Component Knowledge: Thermistor
 
-A thermistor is a temperature-sensitive resistor: its resistance changes as temperature changes, wired into a voltage divider exactly like the [photoresistor in Night Lamp](./12_night_lamp.md).
+A thermistor is a temperature-sensitive resistor: its resistance changes as temperature changes, wired into a voltage divider exactly like the [photoresistor in Night Lamp](./03_01_night_lamp.md).
 
 ![Thermistor component](../images/thermistor_component.png)
 ![Thermistor schematic symbol](../images/thermistor_symbol.png)

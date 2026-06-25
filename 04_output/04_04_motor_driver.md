@@ -38,6 +38,8 @@ Wiring a motor to channels 1 & 2: feeding opposite levels to `In1`/`In2` sets th
 
 ### Wiring Diagram
 
+> Disconnect all power before building the circuit. Reconnect once verified.
+
 ![Wiring Diagram](../images/04_04_wiring_diagram.png)
 
 **Connections:**
@@ -48,10 +50,6 @@ Wiring a motor to channels 1 & 2: feeding opposite levels to `In1`/`In2` sets th
 ### Schematic Diagram
 
 ![Schematic Diagram](../images/04_04_schematic_diagram.png)
-
-> Disconnect all power before building the circuit. Reconnect once verified.
-
----
 
 ## Code
 
@@ -119,7 +117,7 @@ enablePin=Pin(12, Pin.OUT)
 pwm=PWM(enablePin,10000)
 adc=ADC(Pin(1))
 ```
-`in1Pin`/`in2Pin` set direction; PWM on `enablePin` sets speed; the ADC reads the potentiometer, exactly as in [Read the Voltage of a Potentiometer](../02_input_and_output/10_read_voltage_potentiometer.md).
+`in1Pin`/`in2Pin` set direction; PWM on `enablePin` sets speed; the ADC reads the potentiometer, exactly as in [Read the Voltage of a Potentiometer](../02_input_and_output/02_06_read_voltage_potentiometer.md).
 
 ### Drive the motor at a given direction and speed
 

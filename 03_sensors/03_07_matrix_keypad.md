@@ -3,7 +3,7 @@
 Read key presses from a 4×4 matrix keypad and print each key's value to the Shell.
 
 ## New Concepts
-- Matrix keypad scanning (row/column multiplexing)
+- Row/Column multiplexing.  Used to scan the matrix keypad
 
 ### 4×4 Matrix Keypad
 
@@ -123,6 +123,5 @@ See [Class keypad](../reference/Class_keypad.md) for the full API reference.
 ## Further Exploration
 
 - Build a PIN-entry system: accumulate digits until `'#'` is pressed, then compare the sequence against a stored code.
-- Use the keypad to navigate a menu displayed on the [LCD1602](../04_output/21_lcd1602.md).
 
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 22.1

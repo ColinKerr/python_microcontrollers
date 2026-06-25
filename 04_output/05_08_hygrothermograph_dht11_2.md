@@ -1,6 +1,6 @@
 # Hygrothermograph (DHT11 + LCD1602)
 
-Combine the [DHT11](../03_sensors/17_hygrothermograph_dht11.md) and [LCD1602](./21_lcd1602.md) projects: read temperature and humidity, and display both directly on the LCD instead of just printing to the Shell.
+Combine the [DHT11](../03_sensors/03_06_hygrothermograph_dht11.md) and [LCD1602](./04_02_lcd1602.md) projects: read temperature and humidity, and display both directly on the LCD instead of just printing to the Shell.
 
 ## New Concepts
 - Combining a sensor input project with a display output project
@@ -15,6 +15,8 @@ Combine the [DHT11](../03_sensors/17_hygrothermograph_dht11.md) and [LCD1602](./
 
 ### Wiring Diagram
 
+> Disconnect all power before building the circuit. Reconnect once verified.
+
 ![Wiring Diagram](../images/04_08_wiring_diagram.png)
 
 **Connections:**
@@ -24,10 +26,6 @@ Combine the [DHT11](../03_sensors/17_hygrothermograph_dht11.md) and [LCD1602](./
 ### Schematic Diagram
 
 ![Schematic Diagram](../images/04_08_schematic_diagram.png)
-
-> Disconnect all power before building the circuit. Reconnect once verified.
-
----
 
 ## Code
 
@@ -110,7 +108,7 @@ See [Class dht](../reference/Class_dht.md) and [Class I2cLcd](../reference/Class
 
 ## Further Exploration
 
-- Add a third reading (e.g. from the [Thermometer](../03_sensors/13_thermometer.md)'s thermistor) and cycle between display pages every few seconds.
+- Add a third reading (e.g. from the [Thermometer](../03_sensors/03_02_thermometer.md)'s thermistor) and cycle between display pages every few seconds.
 - Use `lcd.clear()` before each update if old digits linger when a new reading has fewer characters.
 
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 24.2

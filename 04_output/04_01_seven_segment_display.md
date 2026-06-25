@@ -5,6 +5,7 @@ Drive a single-digit 7-segment display through a 74HC595 shift register, cycling
 ## New Concepts
 - 7-segment displays
 - Encoding characters as bit patterns
+- Shift registers
 
 ### Component Knowledge: 7-Segment Display
 
@@ -24,7 +25,7 @@ Treating segment A as the lowest bit and DP as the highest, each character maps 
 | 2 | 0xa4 | 6 | 0x82 | A | 0x88 | E | 0x86 |
 | 3 | 0xb0 | 7 | 0xf8 | B | 0x83 | F | 0x8e |
 
-This is the same [74HC595 shift register](../reference/Class_Chip74HC595.md) used to drive [LED bar graphs](../02_input_and_output/06_flowing_light_pwm.md)-style projects — only the meaning of the bits changes, from "which LED" to "which segment."
+This is the same [74HC595 shift register](../reference/Class_Chip74HC595.md) used to drive [LED bar graphs](../02_input_and_output/02_02_flowing_light_pwm.md)-style projects — only the meaning of the bits changes, from "which LED" to "which segment."
 
 ---
 

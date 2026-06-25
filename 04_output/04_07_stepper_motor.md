@@ -33,6 +33,8 @@ A stepper motor's coils need more current than a GPIO pin can supply directly. T
 
 ### Wiring Diagram
 
+> Disconnect all power before building the circuit. Reconnect once verified.
+
 ![Wiring Diagram](../images/04_07_wiring_diagram.png)
 
 **Connections:**
@@ -43,10 +45,6 @@ A stepper motor's coils need more current than a GPIO pin can supply directly. T
 ### Schematic Diagram
 
 ![Schematic Diagram](../images/04_07_schematic_diagram.png)
-
-> Disconnect all power before building the circuit. Reconnect once verified.
-
----
 
 ## Code
 
@@ -115,7 +113,7 @@ Calling `moveSteps()` with `direction=0` instead of `1` reverses the coil-energi
 - **Phase sequencing**: rotating a motor is really just energizing electromagnets in a specific order; reversing that order reverses the direction
 - **Gear reduction**: a small number of physical motor poles (32) becomes a much larger number of effective steps (2048) once gearing is factored in — useful for fine positional control
 
-See [class myServo](../reference/class_myServo/Stepper_Motor.md) for the full API reference (the reference document for this chapter's `mystepmotor` class is filed there).
+See [class mystepmotor](../reference/class_myServo/Stepper_Motor.md) for the full API reference (the reference document for this chapter's `mystepmotor` class is filed there).
 
 ## Further Exploration
 

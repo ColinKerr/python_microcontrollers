@@ -1,10 +1,14 @@
 # MPU6050 Attitude Sensor
 
-Read raw acceleration and rotation (gyroscope) data from an MPU6050 6-axis motion sensor over I2C.
+Read raw acceleration and rotation (gyroscope) data from an MPU6050 6-axis motion sensor over I2C serial connection.
 
 ## New Concepts
-- 6-axis motion sensing (accelerometer + gyroscope)
 - I2C communication
+- MPU6050 - 6-axis motion sensing (accelerometer + gyroscope)
+
+### I2C Communication
+
+I2C (Inter-Integrated Circuit) is a 2-wire serial bus — SDA (data) and SCL (clock) — that lets a microcontroller talk to one or many peripheral chips over just those two shared lines. Each device on the bus has its own address, so the controller can address them individually.
 
 ### Component Knowledge: MPU6050
 
@@ -39,6 +43,8 @@ The MPU6050 combines a 3-axis gyroscope and a 3-axis accelerometer (plus an inte
 
 ### Wiring Diagram
 
+> Disconnect all power before building the circuit. Reconnect once verified.
+
 ![Wiring Diagram](../images/03_08_wiring_diagram.png)
 
 **Connections:**
@@ -50,10 +56,6 @@ The MPU6050 combines a 3-axis gyroscope and a 3-axis accelerometer (plus an inte
 ### Schematic Diagram
 
 ![Schematic Diagram](../images/03_08_schematic_diagram.png)
-
-> Disconnect all power before building the circuit. Reconnect once verified.
-
----
 
 ## Code
 

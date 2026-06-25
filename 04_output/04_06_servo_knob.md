@@ -15,6 +15,8 @@ Control a servo's angle directly with a potentiometer — turn the knob, the ser
 
 ### Wiring Diagram
 
+> Disconnect all power before building the circuit. Reconnect once verified.
+
 ![Wiring Diagram](../images/04_06_wiring_diagram.png)
 
 **Connections:**
@@ -24,10 +26,6 @@ Control a servo's angle directly with a potentiometer — turn the knob, the ser
 ### Schematic Diagram
 
 ![Schematic Diagram](../images/04_06_schematic_diagram.png)
-
-> Disconnect all power before building the circuit. Reconnect once verified.
-
----
 
 ## Code
 
@@ -77,13 +75,13 @@ adcValue=adc.read()
 angle=(adcValue*180)/4096
 servo.myServoWriteAngle(int(angle))
 ```
-The ADC returns 0–4095 (12-bit); multiplying by 180 and dividing by 4096 rescales that range onto 0–180°, the servo's full range of motion — the same range-remapping idea as [Soft Light](../02_input_and_output/11_soft_light.md)'s `remap()`, just written inline as one expression instead of a separate function.
+The ADC returns 0–4095 (12-bit); multiplying by 180 and dividing by 4096 rescales that range onto 0–180°, the servo's full range of motion — the same range-remapping idea as [Soft Light](../02_input_and_output/02_07_soft_light.md)'s `remap()`, just written inline as one expression instead of a separate function.
 
 ---
 
 ## Key Concepts
 
-- **Direct sensor-to-actuator mapping**: reading an analog input and immediately driving an output proportionally is one of the most common patterns across this whole kit — same shape as [Soft Light](../02_input_and_output/11_soft_light.md) and [Night Lamp](../03_sensors/12_night_lamp.md), just with a servo angle instead of LED brightness
+- **Direct sensor-to-actuator mapping**: reading an analog input and immediately driving an output proportionally is one of the most common patterns across this whole kit — same shape as [Soft Light](../02_input_and_output/02_07_soft_light.md) and [Night Lamp](../03_sensors/03_01_night_lamp.md), just with a servo angle instead of LED brightness
 - **Inline range scaling**: `(value * newRange) / oldRange` is a quick way to rescale a number without writing a full `remap()` function, when one of the ranges starts at 0
 
 See [class myServo](../reference/class_myServo/Servo.md) for the full API reference.
@@ -91,6 +89,6 @@ See [class myServo](../reference/class_myServo/Servo.md) for the full API refere
 ## Further Exploration
 
 - Add smoothing (e.g. only update the servo if the angle changed by more than 2°) to reduce jitter from ADC noise.
-- Swap the potentiometer for the [Joystick](../03_sensors/14_joystick.md)'s X or Y axis to control the servo with a stick instead of a knob.
+- Swap the potentiometer for the [Joystick](../03_sensors/03_03_joystick.md)'s X or Y axis to control the servo with a stick instead of a knob.
 
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 18.2

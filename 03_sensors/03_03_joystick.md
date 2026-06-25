@@ -11,10 +11,6 @@ A joystick module is really two rotary potentiometers mounted at 90° to each ot
 
 ![Joystick component](../images/joystick_component.png)
 
-Moving the stick along the X or Y axis turns one of the internal potentiometers, producing an analog voltage on `VRX` or `VRY` — so reading position requires the ADC, just like [Read the Voltage of a Potentiometer](../02_input_and_output/10_read_voltage_potentiometer.md). Pressing the stick down (the Z axis) closes a simple switch, which is a digital signal — read with a plain GPIO pin, the same as a [push button](../01_first_examples/03_button_and_led.md).
-
-![Joystick internal schematic](../images/joystick_internal_schematic.png)
-
 | Pin | Function |
 |-----|----------|
 | GND | Ground |
@@ -23,7 +19,9 @@ Moving the stick along the X or Y axis turns one of the internal potentiometers,
 | VRY | Y-axis analog output |
 | SW | Push-button digital output (Z axis) |
 
----
+Moving the stick along the X or Y axis turns one of the internal potentiometers, producing an analog voltage on `VRX` or `VRY` — so reading position requires the ADC, just like [Read the Voltage of a Potentiometer](../02_input_and_output/02_06_read_voltage_potentiometer.md). Pressing the stick down (the Z axis) closes a simple switch, which is a digital signal — read with a plain GPIO pin, the same as a [push button](../01_first_examples/01_03_button_and_led.md).
+
+![Joystick internal schematic](../images/joystick_internal_schematic.png)
 
 ## Component List
 
@@ -32,6 +30,8 @@ Moving the stick along the X or Y axis turns one of the internal potentiometers,
 ## Circuit
 
 ### Wiring Diagram
+
+> Disconnect all power before building the circuit. Reconnect once verified.
 
 ![Wiring Diagram](../images/03_03_wiring_diagram.png)
 
@@ -45,10 +45,6 @@ Moving the stick along the X or Y axis turns one of the internal potentiometers,
 ### Schematic Diagram
 
 ![Schematic Diagram](../images/03_03_schematic_diagram.png)
-
-> Disconnect all power before building the circuit. Reconnect once verified.
-
----
 
 ## Code
 
@@ -96,7 +92,7 @@ xVal=ADC(Pin(14))
 yVal=ADC(Pin(13))
 zVal=Pin(12,Pin.IN,Pin.PULL_UP)
 ```
-X and Y are analog (`ADC`), since they come from potentiometers. Z is a plain digital input with the internal pull-up enabled, since it's just a button — pressing it pulls GPIO12 LOW, same logic as [Button & LED](../01_first_examples/03_button_and_led.md).
+X and Y are analog (`ADC`), since they come from potentiometers. Z is a plain digital input with the internal pull-up enabled, since it's just a button — pressing it pulls GPIO12 LOW, same logic as [Button & LED](../01_first_examples/01_03_button_and_led.md).
 
 ### Read and print all three axes
 

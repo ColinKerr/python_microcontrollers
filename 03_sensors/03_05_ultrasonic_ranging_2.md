@@ -73,6 +73,6 @@ See [Class hcsr04](../reference/Class_hcsr04.md) for the full API reference, inc
 ## Further Exploration
 
 - Try `SR.distanceMM()` for millimeter precision instead of `distance()`'s centimeters.
-- Compare this code's readings against [Ultrasonic Ranging](./03_04_ultrasonic_ranging.md)'s manual version — they should match closely.
+- Try averaging multiple measurements to produce a more stable value.
 
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 21.2
