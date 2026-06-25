@@ -4,7 +4,7 @@
 
 To have the ESP32-S3 run code automatically after reset or power-on:
 
-1. In Thonny's file panel, open `boot.py` from the `00.1_Boot` folder.
+1. In Thonny's file panel, open `boot.py` from the `reference_code` folder.
 2. Right-click `boot.py` → **Upload to /** to upload it to the MicroPython device root.
 3. Right-click your code file (e.g., `HelloWorld.py`) → **Upload to /**.
 4. Press the **Reset** button on the ESP32-S3. Your code will execute automatically.

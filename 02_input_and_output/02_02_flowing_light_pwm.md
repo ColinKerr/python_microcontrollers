@@ -1,6 +1,6 @@
 # Flowing Light with PWM (Meteor Effect)
 
-Recreate the flowing light animation from [Flowing Light](./05_flowing_light.md), but use PWM instead of simple on/off switching, so each LED fades in and trails off like a meteor instead of snapping on and off.
+Recreate the flowing light animation from [Flowing Light](./02_01_flowing_light.md), but use PWM instead of simple on/off switching, so each LED fades in and trails off like a meteor instead of snapping on and off.
 
 ## New Concepts
 - PWM duty-cycle arrays

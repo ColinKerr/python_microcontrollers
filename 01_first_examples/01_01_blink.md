@@ -4,25 +4,18 @@
 Blink the built-in LED on the ESP32-S3 WROOM. This is the "Hello World" of microcontroller programming.
 
 ## New Concepts
-- Terminal & command line
-- 
-
-### Concept: Debouncing
+- Thonny
+- Python
+- ESP32 Microcontroller
+- Breadboard
 
 ## Component List
 
-| Component | Quantity |
-|-----------|----------|
-| ESP32-S3 WROOM | 1 |
-| USB cable | 1 |
-
+![Components](../images/01_01_components.png)
 
 No external circuit required — this project is powered over USB and uses the LED built into the ESP32-S3 WROOM board (connected internally to GPIO2).
 
 ![WROOM Board](../images/usb_connection.png)
-
-
----
 
 ## Code
 

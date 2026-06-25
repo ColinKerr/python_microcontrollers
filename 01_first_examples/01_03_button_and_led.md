@@ -15,7 +15,7 @@ This 4-pin push button is a 2-pole switch. The two pins on each side are interna
 
 ![Push Button](../images//push_button_1_component.png)
 
-Left pins (1 & 2) are always connected to each other; right pins (3 & 4) are always connected to each other. Pressing the button bridges left and right.
+Left pins are always connected to each other; right pins are always connected to each other. Pressing the button bridges left and right.
 
 ---
 

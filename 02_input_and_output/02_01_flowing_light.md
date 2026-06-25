@@ -2,9 +2,9 @@
 
 Control a 10-LED bar graph to create a flowing light animation — LEDs light up one at a time from left to right, then right to left, repeating in a loop.
 
-New Concepts
-- Arrays
-- For loops
+## New Concepts
+
+- Lists
 
 ## Component List
 
@@ -33,8 +33,6 @@ A LED bar graph integrates 10 individual LEDs into a single compact component. E
 ![Schematic Diagram](../images/02_01_schematic_diagram.png)
 
 Each LED anode connects to its GPIO pin. Each cathode connects to GND through a 220Ω resistor.
-
----
 
 ## Code
 

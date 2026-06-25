@@ -5,6 +5,8 @@ Fade an LED smoothly from off to on and back again, like breathing, instead of j
 ## New Concepts
 - Analog vs. digital signals
 - PWM (Pulse-Width Modulation)
+- For loops
+
 
 ### Concept: Analog & Digital
 
