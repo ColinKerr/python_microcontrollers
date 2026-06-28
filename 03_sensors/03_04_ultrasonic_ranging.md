@@ -24,8 +24,6 @@ To take a reading: hold `Trig` HIGH for at least 10µs to fire a pulse. `Echo` t
 - Working voltage: 5V, working current: 12mA
 - Measurable range: 2cm–200cm
 
----
-
 ## Component List
 
 ![Components](../images/03_04_components.png)
@@ -35,6 +33,9 @@ To take a reading: hold `Trig` HIGH for at least 10µs to fire a pulse. `Echo` t
 > The HC-SR04 runs on 5V, not 3.3V — make sure VCC is wired to the 5V rail.
 
 ### Wiring Diagram
+
+> Disconnect all power before building the circuit. Reconnect once verified.
+
 
 ![Wiring Diagram](../images/03_04_wiring_diagram.png)
 
@@ -48,9 +49,6 @@ To take a reading: hold `Trig` HIGH for at least 10µs to fire a pulse. `Echo` t
 
 ![Schematic Diagram](../images/03_04_schematic_diagram.png)
 
-> Disconnect all power before building the circuit. Reconnect once verified.
-
----
 
 ## Code
 
