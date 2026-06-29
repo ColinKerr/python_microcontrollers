@@ -1,78 +1,26 @@
 from machine import Pin, PWM, Timer
 import time
+from notes import *
 
 bpm = 80
 
 ms_pb = (1000*60)//bpm
 step = ms_pb // 10
 
-def drum1():
-    sound = PWM(13, freq=50, duty=500)
-    time.sleep_ms(step)
-    sound.deinit()
 
-def drum2():
-    sound = PWM(13, freq=25, duty=500)
-    time.sleep_ms(step)
-    sound.deinit()
-
-def pause():
-    time.sleep_ms(step)
-
-def drums(t):
-    drum1()
-    drum2()
-    pause()
-    
-    drum1()
-    drum2()
-    pause()
-    
-    drum1()
-    drum2()
-    drum2()
-    pause()
-
-def bass_note1():
-    sound = PWM(12, freq=100, duty=200)
-    time.sleep_ms(step*4)
-    sound.deinit()
-
-def bass_note2():
-    sound = PWM(12, freq=150, duty=200)
-    time.sleep_ms(step*4)
-    sound.deinit()
-
-def bass_note3():
-    sound = PWM(12, freq=200, duty=200)
-    time.sleep_ms(step*4)
-    sound.deinit()
-
-def bass(t):
-    bass_note1()
-    bass_note2()
-    bass_note3()
-    bass_note3()
-    bass_note2()
-    
-    bass_note2()
-    bass_note1()
-    bass_note1()
-    bass_note2()
-    bass_note3()
+twinkle_notes = [G, G, P, D, D, P, E, E, DL, PL,
+                 C, C, P, B, B, P, A, A, GL, PL,
+                 D, D, P, C, C, P, B, B, AL, PL,
+                 G, G, P, D, D, P, E, E, DL, PL,
+                 C, C, P, B, B, P, A, A, GL]
+twinkle = parse_notes(twinkle_notes, step)
 
 print("Done")
-
-
 timer0 = Timer(0)
-timer1 = Timer(1)
 
-print("Done2")
 
-timer0.init(mode=Timer.PERIODIC, period=ms_pb, callback=drums)
-print("Done3")
-timer1.init(mode=Timer.PERIODIC, period=(ms_pb * 2), callback=bass)
-print("Done4")
+
+play_sequence(twinkle, timer0, 13)
 
 while True:
     pass
