@@ -53,7 +53,7 @@ The for loop defines a variable `i` and that variable will be assigned a differe
 
 ## Circuit
 
-> NOTE: If you have the circuit setup for [03 Button and LED](./03_button_and_led.md) you can leave the button connected for this project.
+> NOTE: If you have the circuit setup for [03 Button and LED](./01_03_button_and_led.md) you can leave the button connected for this project.
 
 ### Wiring Diagram
 
