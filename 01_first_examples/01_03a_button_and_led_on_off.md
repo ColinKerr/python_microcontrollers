@@ -43,7 +43,7 @@ reverseGPIO()
 
 ## Code
 
-**File:** [`01_first_examples/code/ButtonAndLed_OnOffSwitch.py`](./code/ButtonAndLed_OneOffSwitch.py)
+**File:** [`01_first_examples/code/ButtonAndLed_OnOffSwitch.py`](./code/ButtonAndLed_OnOffSwitch.py)
 
 ```python
 import time
