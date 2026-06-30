@@ -6,6 +6,12 @@ Control a 10-LED bar graph to create a flowing light animation — LEDs light up
 
 - Lists
 
+### Concept: List
+
+Python lists hold a sequence of values, for example `l = [1, 2, 3]` is a list holding the values 1, 2, and 3.  Values in a list can be access by index, so `l[0]` accesses the first item in the list, 1 using the example from above.
+
+See [Python documentation](https://docs.python.org/3/tutorial/datastructures.html) for more info on lists.
+
 ## Component List
 
 ![Component List](../images/02_01_components.png)

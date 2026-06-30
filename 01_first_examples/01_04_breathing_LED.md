@@ -5,7 +5,7 @@ Fade an LED smoothly from off to on and back again, like breathing, instead of j
 ## New Concepts
 - Analog vs. digital signals
 - PWM (Pulse-Width Modulation)
-- For loops
+- `for` loops
 
 
 ### Concept: Analog & Digital
@@ -23,6 +23,23 @@ Microcontroller pins can only output fully HIGH or fully LOW — they can't outp
 The longer the duty cycle, the higher the effective brightness of an LED driven by that pin.
 
 On the ESP32-S3, the PWM (LEDC) controller has 8 channels, each independently configurable for frequency, duty cycle, and resolution.
+
+### Concept: `for` Loops
+
+A for loop runs the code inside of it multiple times.  e.g. These two code snippets produce the same output:
+
+```python
+print(0)
+print(1)
+print(2)
+```
+
+```python
+for i in range(0, 3):
+    print(i)
+```
+
+The for loop defines a variable `i` and that variable will be assigned a different value before each iteration of the loop as defined by the `range`.  In this case range is telling python the first value for `i` is 0, the last value is 2 and increase the value by one before it starts running the code contained in the loop.
 
 ---
 
