@@ -8,7 +8,7 @@ Control both the speed and direction of a DC motor from a single potentiometer, 
 
 ### Component Knowledge: L293D
 
-The [relay](./22_relay_and_motor.md) could only switch a motor on/off. The **L293D** is a 4-channel motor driver chip that can additionally control *speed* (via PWM) and *direction* (by swapping which output is HIGH and which is LOW) — without ever exposing the ESP32-S3 to the motor's higher-power circuit.
+The [relay](./04_03_relay_and_motor.md) could only switch a motor on/off. The **L293D** is a 4-channel motor driver chip that can additionally control *speed* (via PWM) and *direction* (by swapping which output is HIGH and which is LOW) — without ever exposing the ESP32-S3 to the motor's higher-power circuit.
 
 ![L293D component](../images/l293d_component.png)
 
