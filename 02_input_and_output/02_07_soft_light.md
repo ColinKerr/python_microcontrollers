@@ -82,7 +82,7 @@ adc=ADC(Pin(1))
 adc.atten(ADC.ATTN_11DB)
 adc.width(ADC.WIDTH_12BIT)
 ```
-PWM on GPIO14 drives the LED; the ADC on GPIO1 reads the potentiometer, same as in [Read the Voltage of a Potentiometer](./10_read_voltage_potentiometer.md).
+PWM on GPIO14 drives the LED; the ADC on GPIO1 reads the potentiometer, same as in [Read the Voltage of a Potentiometer](./02_06_read_voltage_potentiometer.md).
 
 ### Remap one range onto another
 
