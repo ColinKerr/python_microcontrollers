@@ -84,7 +84,7 @@ This project is a direct merge of two earlier ones — nothing here is new on it
 DHT = dht.DHT11(Pin(21))
 i2c = I2C(scl=Pin(13), sda=Pin(14), freq=400000)
 ```
-Sets up the DHT11 exactly as in [Hygrothermograph](../03_sensors/17_hygrothermograph_dht11.md), and the I2C bus exactly as in [LCD1602](./21_lcd1602.md).
+Sets up the DHT11 exactly as in [Hygrothermograph](../03_sensors/03_06_hygrothermograph_dht11.md), and the I2C bus exactly as in [LCD1602](./04_02_lcd1602.md).
 
 ```python
 DHT.measure()
