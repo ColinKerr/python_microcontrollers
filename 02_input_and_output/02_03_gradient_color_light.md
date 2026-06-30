@@ -6,7 +6,7 @@ Make an RGB LED glide smoothly through the full color spectrum, instead of jumpi
 - RGB LEDs & color mixing
 - The `wheel()` color-model function
 
-### Component Knowledge: RGB LED
+### RGB LED
 
 An RGB LED packs 3 individual LEDs (red, green, blue) into one 4-pin package. The long pin is the shared common pin — wired here to 3.3V (common anode) — and the other 3 pins each control one color's brightness through its own resistor.
 
@@ -19,7 +19,7 @@ Red, green, and blue are the additive primary colors of light. Mixing them at di
 
 Driving each LED with its own PWM channel gives 8-bit control per color, so in theory: 256 × 256 × 256 = 16,777,216 possible colors.
 
-### Concept: The Color Wheel
+### The Color Wheel
 
 Instead of picking 3 random duty-cycle values (like Random Color Light does), this project steps a single position value (0–1023) around a "wheel," computing red/green/blue from which third of the wheel that position falls in. Stepping through every position in order produces a smooth gradient instead of abrupt jumps.
 

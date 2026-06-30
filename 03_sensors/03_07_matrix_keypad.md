@@ -3,6 +3,7 @@
 Read key presses from a 4×4 matrix keypad and print each key's value to the Shell.
 
 ## New Concepts
+
 - Row/Column multiplexing.  Used to scan the matrix keypad
 
 ### 4×4 Matrix Keypad

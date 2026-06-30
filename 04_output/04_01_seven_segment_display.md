@@ -7,7 +7,7 @@ Drive a single-digit 7-segment display through a 74HC595 shift register, cycling
 - Encoding characters as bit patterns
 - Shift registers
 
-### Component Knowledge: 7-Segment Display
+### 7-Segment Display
 
 A 7-segment display is 8 LEDs (segments A–G, plus a decimal point DP) arranged to form digits and some letters, sharing one common anode.
 
@@ -15,6 +15,8 @@ A 7-segment display is 8 LEDs (segments A–G, plus a decimal point DP) arranged
 ![7-segment display pinout](../images/seven_segment_pinout.png)
 
 Turning specific segments ON (and leaving others OFF) draws a character — for example, "0" lights segments A–F and leaves G and DP off. Since this display is **common anode**, a segment turns ON when its pin is driven LOW, not HIGH.
+
+### Encoding characters as bit patterns
 
 Treating segment A as the lowest bit and DP as the highest, each character maps to one byte, written as `DP G F E D C B A`. For example, "0" is segments A–F on, G and DP off → `1100 0000` → `0xC0`.
 
@@ -26,6 +28,10 @@ Treating segment A as the lowest bit and DP as the highest, each character maps 
 | 3 | 0xb0 | 7 | 0xf8 | B | 0x83 | F | 0x8e |
 
 This is the same [74HC595 shift register](../reference/Class_Chip74HC595.md) used to drive [LED bar graphs](../02_input_and_output/02_02_flowing_light_pwm.md)-style projects — only the meaning of the bits changes, from "which LED" to "which segment."
+
+### Shift registers
+
+
 
 ---
 

@@ -5,13 +5,13 @@ Redo [Ultrasonic Ranging](./03_04_ultrasonic_ranging.md) using a pre-built `hcsr
 ## New Concepts
 - Using a driver module to replace manual low-level timing code
 
----
+### HCSR04 driver module
+
+This python module encapsulates all the logic to use the sensor and exposes a function to get the distance.  See [reference/Class_hcsr04.md](../reference/Class_hcsr04.md) for detail about the library
 
 ## Component List & Circuit
 
 *Identical to [Ultrasonic Ranging](./03_04_ultrasonic_ranging.md)*.
-
----
 
 ## Code
 
@@ -42,8 +42,6 @@ except:
 2. Right-click `hcsr04.py` → **Upload to /** — wait for it to finish uploading to the ESP32-S3.
 3. Double-click `Ultrasonic_Ranging_2.py`.
 4. Click **Run current script** — same distance readings as before, with far less code.
-
----
 
 ## Code Explanation
 

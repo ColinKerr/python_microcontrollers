@@ -2,22 +2,21 @@
 
 Control an LED with a push button switch. When the button is pressed the LED turns ON; when released it turns OFF. Introduces the concept of input → control → output.
 
+## New Concepts
 
-## Component List
-
-![Component List](../images/01_03_components.png)
-
-
-## Component Knowledge
+ - Push button switch
 
 ### Push Button Switch
+
 This 4-pin push button is a 2-pole switch. The two pins on each side are internally connected. When the button is pressed, the left and right sides connect, completing the circuit.
 
 ![Push Button](../images//push_button_1_component.png)
 
 Left pins are always connected to each other; right pins are always connected to each other. Pressing the button bridges left and right.
 
----
+## Component List
+
+![Component List](../images/01_03_components.png)
 
 ## Circuit
 

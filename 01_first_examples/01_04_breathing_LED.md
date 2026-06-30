@@ -8,13 +8,13 @@ Fade an LED smoothly from off to on and back again, like breathing, instead of j
 - `for` loops
 
 
-### Concept: Analog & Digital
+### Analog & Digital
 
 An analog signal is continuous in both time and value — like temperature changing smoothly throughout the day. A digital signal only ever holds discrete values (1s and 0s), and can change instantly between them. Both can be converted into the other.
 
 ![Analog vs Digital](../images/analog_vs_digital.png)
 
-### Concept: PWM
+### PWM
 
 Microcontroller pins can only output fully HIGH or fully LOW — they can't output a true analog voltage. PWM fakes an analog output by switching a pin HIGH and LOW very quickly. The **duty cycle** is the percentage of each cycle (period) spent HIGH. A longer duty cycle behaves like a higher average voltage; a shorter one behaves like a lower voltage.
 
@@ -24,7 +24,7 @@ The longer the duty cycle, the higher the effective brightness of an LED driven 
 
 On the ESP32-S3, the PWM (LEDC) controller has 8 channels, each independently configurable for frequency, duty cycle, and resolution.
 
-### Concept: `for` Loops
+### `for` Loops
 
 A for loop runs the code inside of it multiple times.  e.g. These two code snippets produce the same output:
 
@@ -41,21 +41,19 @@ for i in range(0, 3):
 
 The for loop defines a variable `i` and that variable will be assigned a different value before each iteration of the loop as defined by the `range`.  In this case range is telling python the first value for `i` is 0, the last value is 2 and increase the value by one before it starts running the code contained in the loop.
 
----
-
 ## Component List
 
 *Same components as [02_blink_external_led.md](./01_02_blink_external_led.md).*
 
 ![Components](../images/01_02_components.png)
 
----
-
 ## Circuit
 
 > NOTE: If you have the circuit setup for [03 Button and LED](./01_03_button_and_led.md) you can leave the button connected for this project.
 
 ### Wiring Diagram
+
+> Disconnect all power before building the circuit. Reconnect once verified.
 
 ![Wiring Diagram](../images/01_02_wiring_diagram.png)
 
@@ -66,8 +64,6 @@ The for loop defines a variable `i` and that variable will be assigned a differe
 **Connections:**
 - LED anode → 220Ω resistor → GPIO2
 - LED cathode → GND
-
-> Disconnect all power before building the circuit. Reconnect once verified.
 
 ---
 

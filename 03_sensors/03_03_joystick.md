@@ -3,9 +3,10 @@
 Read a 2-axis analog joystick's X position, Y position, and button press, and print all three to the Shell.
 
 ## New Concepts
-- Combining analog (ADC) and digital (GPIO) inputs from one module
 
-### Component Knowledge: Joystick
+- Joystick
+
+### Joystick
 
 A joystick module is really two rotary potentiometers mounted at 90° to each other, plus a push button underneath, all on one PCB.
 

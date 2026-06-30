@@ -3,11 +3,11 @@
 
 Blink an external LED wired to the ESP32-S3 via a breadboard. This introduces basic circuit concepts: LEDs, resistors, and breadboards.
 
-## Component List
+## New Concepts
 
-![Component list](../images/01_02_components.png)
-
-## Component Knowledge
+- LED
+- Resistor
+- Breadboard
 
 ### LED
 
@@ -31,12 +31,17 @@ Ohm's Law: **I = V / R**
 
 Resistors are **non-polar** — direction doesn't matter.
 
+For more details on resistors see [Resistors reference doc](../reference/resistors.md)
+
 ### Breadboard
-Rows of holes on a breadboard are electrically connected internally. Insert components into the same row to connect them without soldering. Power rails (marked + and −) run along the sides.
+
+Rows of holes on a breadboard are electrically connected internally. Insert components into the same row to connect them without soldering. Power rails (marked + and −) run along the sides.  The ESP32 micro controller is plugged into a breadboard.
 
 ![Breadboard component](../images/breadboard_component.png)
 
----
+## Component List
+
+![Component list](../images/01_02_components.png)
 
 ## Circuit
 

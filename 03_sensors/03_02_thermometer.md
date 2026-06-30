@@ -4,14 +4,16 @@ Build a digital thermometer using a thermistor — a resistor whose resistance c
 
 ## New Concepts
 - Thermistors
-- Deriving a physical quantity (temperature) from a resistance formula
+- Measuring temperature via resistance
 
-### Component Knowledge: Thermistor
+### Thermistor
 
 A thermistor is a temperature-sensitive resistor: its resistance changes as temperature changes, wired into a voltage divider exactly like the [photoresistor in Night Lamp](./03_01_night_lamp.md).
 
 ![Thermistor component](../images/thermistor_component.png)
 ![Thermistor schematic symbol](../images/thermistor_symbol.png)
+
+### Measuring temperature via resistance
 
 The relationship between a thermistor's resistance and temperature is:
 

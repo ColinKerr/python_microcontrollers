@@ -2,10 +2,6 @@
 
 Combine ADC and PWM: read a potentiometer's position and use it to control an LED's brightness, so turning the knob smoothly dims or brightens the light.
 
-## New Concepts
-- Mapping one numeric range onto another (`remap()`)
-- Combining ADC input with PWM output
-
 ---
 
 ## Component List

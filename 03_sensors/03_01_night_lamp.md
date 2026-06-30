@@ -6,11 +6,13 @@ Make an LED automatically brighten in the dark and dim in bright light, using a 
 - Photoresistors (LDRs)
 - Voltage dividers as a sensing technique
 
-### Component Knowledge: Photoresistor
+### Photoresistor
 
 A photoresistor (LDR) is a light-sensitive resistor — its resistance drops as more light hits its surface, and rises in the dark.
 
 ![Photoresistor component](../images/photoresistor_component.png)
+
+### Voltage dividers
 
 Pairing it with a fixed resistor in a voltage divider turns that resistance change into a voltage change, which the ADC can read.  
 

@@ -6,7 +6,7 @@ Measure distance to an object using an HC-SR04 ultrasonic sensor, by manually ti
 - Ultrasonic distance sensing
 - Precise pulse timing with `time.ticks_us()`
 
-### Component Knowledge: HC-SR04
+### Ultrasonic sensor - HC-SR04
 
 The HC-SR04 integrates both an ultrasonic transmitter and receiver. The transmitter turns an electrical pulse into a high-frequency sound wave (above human hearing); the receiver listens for that wave bouncing back off an obstacle.
 
@@ -35,7 +35,6 @@ To take a reading: hold `Trig` HIGH for at least 10µs to fire a pulse. `Echo` t
 ### Wiring Diagram
 
 > Disconnect all power before building the circuit. Reconnect once verified.
-
 
 ![Wiring Diagram](../images/03_04_wiring_diagram.png)
 

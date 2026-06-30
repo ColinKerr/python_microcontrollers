@@ -6,11 +6,11 @@ Recreate the flowing light animation from [Flowing Light](./02_01_flowing_light.
 - Custom Python modules
 - Nested `for` loops
 
-### Concept: Custom Modules
+### Custom Modules
 
 Any `.py` file saved onto the ESP32-S3 can be imported as a module, as long as it lives alongside the script that imports it (or on the MicroPython module search path). This project defines a small PWM helper class in `pwm.py` and imports it with `from pwm import myPWM` — so `pwm.py` has to be uploaded to the device too, not just the main script.
 
-### Concept: Nested `for` loops
+### Nested `for` loops
 
 A nested for looop is when one for loop runs within another.  To help think about this think of a normal for loop that calls a function:
 

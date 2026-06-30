@@ -3,12 +3,12 @@
 Read temperature and humidity from a DHT11 sensor and print both to the Shell.
 
 ## New Concepts
-- Single-wire digital sensor communication
-- Pre-calibrated sensor modules
 
-### Component Knowledge: DHT11
+- DHT11
 
-The DHT11 is a combined temperature and humidity sensor whose output is already calibrated by the manufacturer — no formulas or lookup tables needed, unlike the [Thermistor](./03_02_thermometer.md). It uses a custom single-wire protocol to send data, so reading it relies on the `dht` driver module rather than a plain GPIO read.
+### DHT11
+
+The DHT11 is a combined temperature and humidity sensor whose output is already calibrated by the manufacturer — no formulas or lookup tables needed, unlike the [Thermistor](./03_02_thermometer.md). It uses a custom single-wire protocol to send data, so reading it relies on the [`dht`](../reference/Class_dht.md) driver module rather than a plain GPIO read.
 
 ![DHT11 component](../images/dht11_component.png)
 
@@ -24,8 +24,6 @@ The sensor takes about 1 second to initialize after power-up.
 ## Component List
 
 ![Components](../images/03_06_components.png)
-
----
 
 ## Circuit
 
@@ -44,8 +42,6 @@ The sensor takes about 1 second to initialize after power-up.
 ### Schematic Diagram
 
 ![Schematic Diagram](../images/03_06_schematic_diagram.png)
-
----
 
 ## Code
 
@@ -67,8 +63,6 @@ while True:
         pass
 ```
 
----
-
 ## How to Run
 
 ### Online
@@ -76,7 +70,6 @@ while True:
 2. Double-click `Hygrothermograph.py`.
 3. Click **Run current script** — temperature and humidity print to the Shell every 2 seconds.
 
----
 
 ## Code Explanation
 

@@ -10,9 +10,9 @@ Read raw acceleration and rotation (gyroscope) data from an MPU6050 6-axis motio
 
 I2C (Inter-Integrated Circuit) is a 2-wire serial bus — SDA (data) and SCL (clock) — that lets a microcontroller talk to one or many peripheral chips over just those two shared lines. Each device on the bus has its own address, so the controller can address them individually.
 
-### Component Knowledge: MPU6050
+### MPU6050
 
-The MPU6050 combines a 3-axis gyroscope and a 3-axis accelerometer (plus an internal temperature sensor) in one package, communicating over I2C at the default address `0x68`. It's the kind of sensor used to keep drones, self-balancing robots, and phones aware of their orientation and movement.
+The MPU6050 combines a 3-axis gyroscope and a 3-axis accelerometer (plus an internal temperature sensor) in one package, communicating over I2C at the default address `0x68`. It's the kind of sensor used to keep drones, self-balancing robots, and phones aware of their orientation and movement.  See [reference/Class_mpu6050.md](../reference/Class_mpu6050.md) for details about the driver module for this sensor.
 
 ![MPU6050 component](../images/mpu6050_component.png)
 
@@ -29,13 +29,9 @@ The MPU6050 combines a 3-axis gyroscope and a 3-axis accelerometer (plus an inte
 
 > The MPU6050's I2C signal is sensitive to connection quality — make sure jumper wires are seated firmly, or readings may fail intermittently.
 
----
-
 ## Component List
 
 ![Components](../images/03_08_components.png)
-
----
 
 ## Circuit
 

@@ -6,20 +6,23 @@ Control a Freenove 8 RGB LED Module (WS2812 "NeoPixel" LEDs) using only a single
 - Addressable RGB LEDs (WS2812 / NeoPixel)
 - The `neopixel` module
 
-### Component Knowledge: Freenove 8 RGB LED Module
+### Freenove 8 RGB LED Module
 
 The module packs 8 WS2812 LEDs, each with its own red, green, and blue element (256 brightness levels per color — 16,777,216 possible colors per LED). Unlike a standard RGB LED, each WS2812 only needs a single data pin: it reads its own color data from the signal, then passes the rest down the line to the next LED. This lets multiple modules be chained by connecting one module's `OUT` to the next module's `IN`, controlling 8, 16, 24… LEDs from a single GPIO pin.
 
----
+### neopixel module
+
+This module helps you control the Freenove 8 RGB LED Module.  See [reference/Class_neopixel.md](../reference/Class_neopixel.md) for documentation on this module.
 
 ## Component List
 
 ![Components](../images/02_04_components.png)
----
 
 ## Circuit
 
 ### Wiring Diagram
+
+> Disconnect all power before building the circuit. Reconnect once verified.
 
 ![Wiring Diagram](../images/02_04_wiring_diagram.png)
 
@@ -29,10 +32,6 @@ The module packs 8 WS2812 LEDs, each with its own red, green, and blue element (
 ### Schematic Diagram
 
 ![Schematic Diagram](../images/02_04_schematic_diagram.png)
-
-> Disconnect all power before building the circuit. Reconnect once verified.
-
----
 
 ## Code
 
@@ -63,16 +62,12 @@ while True:
     time.sleep_ms(500)
 ```
 
----
-
 ## How to Run
 
 ### Online
 1. Open Thonny → `02_input_and_output/code/`.
 2. Double-click `Neopixel.py`.
 3. Click **Run current script** — all 8 LEDs cycle through red, green, blue, white, then off.
-
----
 
 ## Code Explanation
 
