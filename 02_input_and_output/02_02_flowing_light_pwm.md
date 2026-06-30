@@ -3,13 +3,8 @@
 Recreate the flowing light animation from [Flowing Light](./02_01_flowing_light.md), but use PWM instead of simple on/off switching, so each LED fades in and trails off like a meteor instead of snapping on and off.
 
 ## New Concepts
-- PWM duty-cycle arrays
 - Custom Python modules
 - Nested `for` loops
-
-### Concept: PWM Channels
-
-The ESP32-S3's PWM (LEDC) controller only has 8 independent channels. The original Flowing Light project drives all 10 LEDs with plain digital on/off, but a PWM version can only fade 8 of them at once — so this project wires up 8 LEDs instead of 10.
 
 ### Concept: Custom Modules
 
@@ -17,13 +12,51 @@ Any `.py` file saved onto the ESP32-S3 can be imported as a module, as long as i
 
 ### Concept: Nested `for` loops
 
+A nested for looop is when one for loop runs within another.  To help think about this think of a normal for loop that calls a function:
+
+```python
+for i in range(0,3):
+    nestedLoop(i)
+```
+
+The outer loop calls the function `nestedLoop` 3 times passing in `i` as an input parameter.  So the `nestedLoop` function will run 16 times with inputs 0 through 2.
+
+If this is the implementation of `nestedLoop` what will the first function print out?
+
+```python
+def nestedLoop(i):
+    for j in range(0,1):
+        print(i, j)
+```
+
+Each time `nested looop` is called it will print i & j twice, so when called in the first loop it will print out:
+
+```bash
+0 0
+0 1
+1 0
+1 1
+2 0
+2 1
+3 0
+3 1
+```
+
+If you combine the two pieces of code you get nested for loops:
+
+```python
+for i in range(0,3):
+    for j in range(0,1):
+        print(i, j)
+```
 
 
 ---
 
 ## Component List
 
-*Same board and LED bar graph as [Flowing Light](./02_01_flowing_light.md), but only 8 of the 10 LEDs are wired — one fewer jumper/resistor pair than the GPIO count, since only 8 PWM channels are available.*
+*Same board and LED bar graph as [Flowing Light](./02_01_flowing_light.md), but only 8 of the 10 LEDs are wired — two fewer jumper/resistor pair than the GPIO count, since only 8 PWM channels are available.*
+
 
 ![Components](../images/02_01_components.png)
 
@@ -33,6 +66,8 @@ Any `.py` file saved onto the ESP32-S3 can be imported as a module, as long as i
 
 ### Wiring Diagram
 
+> Disconnect all power before building the circuit. Reconnect once verified.
+
 ![Wiring Diagram](../images/02_02_wiring_diagram.png)
 
 ### Schematic Diagram
@@ -40,8 +75,6 @@ Any `.py` file saved onto the ESP32-S3 can be imported as a module, as long as i
 ![Schematic Diagram](../images/02_02_schematic_diagram.png)
 
 Each of the 8 wired LED anodes connects to its GPIO pin; each cathode connects to GND through a 220Ω resistor. LEDs 1 and 2 on the bar graph are left unconnected.
-
-> Disconnect all power before building the circuit. Reconnect once verified.
 
 ---
 
