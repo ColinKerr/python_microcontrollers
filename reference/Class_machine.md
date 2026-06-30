@@ -1,7 +1,5 @@
 # Class machine
 
-> Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) — Chapter 1, LED (Important)
-
 Before each use of the `machine` module, add `import machine` to the top of the Python file.
 
 - **`machine.freq(freq_val)`**: When `freq_val` is not specified, returns the current CPU frequency; otherwise sets the CPU frequency.
@@ -16,3 +14,5 @@ Before each use of the `machine` module, add `import machine` to the top of the 
   - If the setting level is not consistent with the current pulse level, it waits until they are consistent, then starts timing. If the set level already matches the current pulse level, it starts timing immediately.
   - When the pin level is opposite to the set level, it waits for timeout and returns `-2`. When the pin level matches the set level, it also waits for timeout but returns `-1`.
   - `timeout_us` is the duration of the timeout.
+
+> Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) — Chapter 1, LED (Important)

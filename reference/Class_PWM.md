@@ -11,3 +11,5 @@ Before each use of the PWM module, add the statement `from machine import PWM` t
 - **`PWM.freq([freq_val])`**: With no parameter, obtains and returns the PWM frequency. With a parameter, sets the PWM frequency and returns nothing.
 - **`PWM.duty([duty_val])`**: With no parameter, obtains and returns the PWM duty cycle. With a parameter, sets the PWM duty cycle.
 - **`PWM.deinit()`**: Turns PWM off.
+
+> PWM is part ofthe machine module which is included with MicroPython

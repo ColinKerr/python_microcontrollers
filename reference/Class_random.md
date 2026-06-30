@@ -1,7 +1,5 @@
 # Class random
 
-> Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) — Chapter 5, RGB LED
-
 Before each use of the `random` module, add the statement `import random` to the top of the Python file.
 
 - **`randint(start, end)`**: Randomly generates an integer between `start` and `end`.
@@ -21,3 +19,7 @@ Before each use of the `random` module, add the statement `import random` to the
   - `sed`: Random seed — a starting point for generating random numbers.
 - **`random.choice(obj)`**: Randomly generates an element from the object `obj`.
   - `obj`: A list of elements.
+
+> random is a standard module included with python run time,
+
+> Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) — Chapter 5, RGB LED

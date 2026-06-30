@@ -1,7 +1,5 @@
 # Class ADC
 
-> Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) — Chapter 9, AD Converter
-
 Before each use of the ADC module, add the statement `from machine import ADC` to the top of the Python file.
 
 - **`machine.ADC(pin)`**: Creates an ADC object associated with the given pin.
@@ -19,3 +17,5 @@ Before each use of the ADC module, add the statement `from machine import ADC` t
     - `ADC.WIDTH_10BIT` — 10-bit data width
     - `ADC.WIDTH_11BIT` — 11-bit data width
     - `ADC.WIDTH_12BIT` — 12-bit data width
+
+> Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) — Chapter 9, AD Converter

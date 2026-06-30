@@ -1,7 +1,5 @@
 # Class I2cLcd
 
-> Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) — Chapter 20, LCD1602
-
 Before each use of the object **I2cLcd**, make sure `I2C_LCD.py` and `LCD_API.py` have been uploaded to `/` on the ESP32-S3, and then add the statement `from I2C_LCD import I2cLcd` to the top of the Python file.
 
 - **`clear()`**: Clears the LCD1602 screen display.
@@ -18,3 +16,7 @@ Before each use of the object **I2cLcd**, make sure `I2C_LCD.py` and `LCD_API.py
   - `cursor_y`: Row position.
 - **`putchar(char)`**: Prints the given character on the LCD1602.
 - **`putstr(string)`**: Prints the given string on the LCD1602.
+
+> Copies of these modules can be found in the `reference_code` directory.
+
+> Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) — Chapter 20, LCD1602
