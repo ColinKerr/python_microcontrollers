@@ -1,4 +1,5 @@
 from machine import PWM, Timer
+from math import floor
 
 # This format treats each four character sequence as a note
 # Note format is [note][octave][duration], note is two characters, octave is 0-8 and duration is 1-9.
@@ -37,6 +38,7 @@ def play_next_sequence(t, sound, note_sequence, timer, pin):
         note = note_sequence.pop(0)
         sound = PWM(pin, freq=note[0], duty=512) if note[0] > 0 else None
         timer.init(mode=Timer.ONE_SHOT, period=note[1], callback=(lambda t: play_next_sequence(t, sound, note_sequence, timer, pin)))
+
 A = "A_34"
 AL = "A_39"
 B = "B_34"
