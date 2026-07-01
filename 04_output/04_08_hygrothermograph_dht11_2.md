@@ -1,6 +1,6 @@
 # Hygrothermograph (DHT11 + LCD1602)
 
-Combine the [DHT11](../03_sensors/03_06_hygrothermograph_dht11.md) and [LCD1602](./04_02_lcd1602.md) projects: read temperature and humidity, and display both directly on the LCD instead of just printing to the Shell.
+Combine the [DHT11](../03_sensors/03_06_hygrothermograph_dht11.md) and [LCD1602](./0403_lcd1602.md) projects: read temperature and humidity, and display both directly on the LCD instead of just printing to the Shell.
 
 ## New Concepts
 - Combining a sensor input project with a display output project
@@ -84,7 +84,7 @@ This project is a direct merge of two earlier ones — nothing here is new on it
 DHT = dht.DHT11(Pin(21))
 i2c = I2C(scl=Pin(13), sda=Pin(14), freq=400000)
 ```
-Sets up the DHT11 exactly as in [Hygrothermograph](../03_sensors/03_06_hygrothermograph_dht11.md), and the I2C bus exactly as in [LCD1602](./04_02_lcd1602.md).
+Sets up the DHT11 exactly as in [Hygrothermograph](../03_sensors/03_06_hygrothermograph_dht11.md), and the I2C bus exactly as in [LCD1602](./04_03_lcd1602.md).
 
 ```python
 DHT.measure()
