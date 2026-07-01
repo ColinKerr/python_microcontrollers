@@ -35,7 +35,7 @@ mario_notes = ["E_44" , "E_44", "E_44", "C_44", "E_44", "G_44", "G_44", "C_44",
                "A_44", "C_44", "D_44", "DS44", "D_44", "C_44", "C_44", "G_44", 
                "E_44", "A_44", "B_44", "A_44", "GS44", "AS44", "GS44", "G_44", "F_44",  "G_44"]
 
-mario_notes2 = [E, E, E, C, E, G, G, C,
+mario_notes2 = [E, E, P, E, P, C, P, E, G, G, C,
                  G, E, A, B, AS, A, G, E,
                  G, A, F, G, E, C, D, B,
                  C, G, E, A, B, AS, A, G,
@@ -47,8 +47,21 @@ mario_notes2 = [E, E, E, C, E, G, G, C,
                  G, E, A, B, A, GS, AS, GS,
                  G, F, G]
 
-mario = parse_notes(mario_notes2, step)
-play_sequence(mario, timer0, Pin(13, Pin.OUT))
+mario_notes3 = [D, D, P, D, P, D, P, D, G, G, G, E, C, F, G, FS, F, E, C,
+                 E, F, D, E, C, E, F, D, G,
+                 E, C, F, G, FS, F, E, C,
+                 E, F, D, E, C, E, F, D, C,
+                 G, C, F, C, F, C, G, C,
+                 G, C, G, C, G, C, F, C,
+                 F, C, G, GS, A#, C, G, G,
+                 C, G, E, C, F, CS, F, C,
+                 E]
+
+mario1 = parse_notes(mario_notes2, step)
+mario2 = parse_notes(mario_notes3, step)
+play_sequence(mario1, timer0, Pin(13, Pin.OUT))
+play_sequence(mario2, timer0, Pin(12, Pin.OUT))
+
 
 while True:
     pass
