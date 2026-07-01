@@ -50,8 +50,6 @@ With pins 1 and 2 connected across a power supply, the wiper (pin 3) outputs a v
 
 ![Schematic Diagram](../images/02_06_schematic_diagram.png)
 
----
-
 ## Code
 
 **File:** [`02_input_and_output/code/AnalogRead.py`](./code/AnalogRead.py)
