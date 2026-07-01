@@ -18,7 +18,7 @@ def parse_notes(note_array, step_size, append_rest=True):
         time = int(duration * step_size)
         note_sequence.append([frequency, time])
         if append_rest and note[0] != "_":
-            note_sequence.append([0, floor(step_size/4)])
+            note_sequence.append([0, floor(step_size)])
     return note_sequence
 
 
@@ -46,6 +46,7 @@ B = "B_34"
 BL = "B_39"
 C = "C_44"
 CL = "C_49"
+CS = "CS44"
 D = "D_44"
 DL = "D_49"
 DS = "DS44"
