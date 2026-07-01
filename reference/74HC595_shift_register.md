@@ -21,4 +21,6 @@ The ports of the 74HC595 chip are described as follows:
 | MR | 10 | Remove shift register: When this pin is in low level, the content in shift register will be cleared. |
 | Q7' | 9 | Serial data output: it can be connected to more 74HC595 in series. |
 
+See [Class Chip74HC595](./Class_Chip74HC595.md) for library to help use this chip.
+
 For more detail, please refer to the datasheet on the 74HC595 chip.

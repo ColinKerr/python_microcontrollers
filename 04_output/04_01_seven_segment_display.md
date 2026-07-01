@@ -3,9 +3,11 @@
 Drive a single-digit 7-segment display through a 74HC595 shift register, cycling through hexadecimal characters `0`–`F`.
 
 ## New Concepts
+
 - 7-segment displays
 - Encoding characters as bit patterns
 - Shift registers
+
 
 ### 7-Segment Display
 
@@ -27,23 +29,25 @@ Treating segment A as the lowest bit and DP as the highest, each character maps 
 | 2 | 0xa4 | 6 | 0x82 | A | 0x88 | E | 0x86 |
 | 3 | 0xb0 | 7 | 0xf8 | B | 0x83 | F | 0x8e |
 
-This is the same [74HC595 shift register](../reference/Class_Chip74HC595.md) used to drive [LED bar graphs](../02_input_and_output/02_02_flowing_light_pwm.md)-style projects — only the meaning of the bits changes, from "which LED" to "which segment."
-
 ### Shift registers
 
+A shift register takes in serial input, stores it in a buffer then outputs it as parallel output.  
 
+![Shift Register working](../images/74HC595-Shift-Register-Working.gif)
 
----
+For serial input data is fed in one bit at a time using a single wire.  For Parallel output all 8 bits are output at once using 8 wires.  That allows the microcontroler to only use 3 pins to drive 8 outputs.  Those pins are used for: data, clock and trigger.
+
+For more information see the reference documentation for the [74HC595 shift register](../reference/74HC595_shift_register.md).  
 
 ## Component List
 
 ![Components](../images/04_01_components.png)
 
----
-
 ## Circuit
 
 ### Wiring Diagram
+
+> Disconnect all power before building the circuit. Reconnect once verified.
 
 ![Wiring Diagram](../images/04_01_wiring_diagram.png)
 
@@ -55,9 +59,6 @@ This is the same [74HC595 shift register](../reference/Class_Chip74HC595.md) use
 
 ![Schematic Diagram](../images/04_01_schematic_diagram.png)
 
-> Disconnect all power before building the circuit. Reconnect once verified.
-
----
 
 ## Code
 

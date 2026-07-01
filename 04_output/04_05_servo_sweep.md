@@ -6,11 +6,13 @@ Make a servo motor sweep continuously from 0° to 180° and back.
 - Servo motors
 - Driving a servo with PWM angle control
 
-### Component Knowledge: Servo
+### Servo
 
 A servo packages a small DC motor, reduction gears, a position sensor, and control circuitry together, letting you command it to a specific angle (rather than just spinning continuously like the [DC motor](./22_relay_and_motor.md)). Most hobby servos sweep a 180° range via their output "horn," and can output far more torque than a bare DC motor of similar size.
 
 ![Servo component](../images/servo_component.png)
+
+### Controlling a servo with PWM signal
 
 A servo has 3 wires: power (red, VCC), ground (brown, GND), and signal (orange). It's positioned with a 50Hz PWM signal, where the *pulse width* (not the duty cycle percentage) determines the angle:
 
@@ -22,7 +24,6 @@ A servo has 3 wires: power (red, VCC), ground (brown, GND), and signal (orange).
 | 2.0ms | 135° |
 | 2.5ms | 180° |
 
----
 
 ## Component List
 

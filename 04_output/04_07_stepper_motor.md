@@ -3,10 +3,12 @@
 Drive a 4-phase stepper motor through a ULN2003 driver board, rotating it one full turn clockwise, then one full turn counter-clockwise, on a continuous loop.
 
 ## New Concepts
-- Stepper motors
-- Open-loop position control
 
-### Component Knowledge: Stepper Motor
+- Stepper motors
+- ULN2003 Stepper motor driver
+- Open-loop control circuit
+
+### Stepper Motor
 
 Unlike a [DC motor](./22_relay_and_motor.md), which just spins as fast as its voltage allows, a stepper motor moves in discrete, precise increments ("steps") — and its position depends only on how many pulses it's been sent, not on load (within its torque limits).
 
@@ -15,13 +17,15 @@ Unlike a [DC motor](./22_relay_and_motor.md), which just spins as fast as its vo
 
 Inside, the stator has coils arranged in 4 phases (A, B, C, D). Energizing them in sequence — `A→B→C→D→A→…` — pulls the rotor around one step at a time; reversing the sequence reverses the direction. This kit's motor has 32 magnetic poles (32 steps per revolution at the rotor), geared down 1:64 — so the output shaft needs `32 × 64 = 2048` steps for one full revolution.
 
-### Component Knowledge: ULN2003 Driver
+### ULN2003 Driver
 
 A stepper motor's coils need more current than a GPIO pin can supply directly. The ULN2003 board sits between the ESP32-S3 and the motor, amplifying 4 weak digital signals (`IN1`–`IN4`) into the stronger signals (`A`–`D`) needed to energize each coil — with 4 onboard LEDs showing which phase is currently active.
 
 ![ULN2003 driver component](../images/uln2003_component.png)
 
----
+### Open Loop control circuit
+
+A stepper motor uses an open loop position control circuit.  Open loop control circuits do not have any feedback so the stepper motor doesn't know if it didn't move because something is blocking it's movement.
 
 ## Component List
 

@@ -3,6 +3,7 @@
 Combine the [DHT11](../03_sensors/03_06_hygrothermograph_dht11.md) and [LCD1602](./0403_lcd1602.md) projects: read temperature and humidity, and display both directly on the LCD instead of just printing to the Shell.
 
 ## New Concepts
+
 - Combining a sensor input project with a display output project
 
 ---
