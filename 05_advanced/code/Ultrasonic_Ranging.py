@@ -27,7 +27,7 @@ class ultrasonic:
         return int(ticks*self.soundVelocity//2//10000)
 
 
-trigPulse = PWM(13, freq=10, duty=1)
+trigPulse = PWM(Pin(13, Pin.OUT), freq=10, duty=1)
 us = ultrasonic(14)
 
 time.sleep_ms(2000)

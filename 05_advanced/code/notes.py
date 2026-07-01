@@ -5,7 +5,7 @@ from machine import PWM, Timer
 # Notes are C, CS, D, DS, E, F, FS, G, GS, A, AS, B and __ for rest. And are found in notes.py.
 
 # Takes in a string of notes and returns a list of objects with note frequency and duration.
-def parse_notes(note_array, step_size):
+def parse_notes(note_array, step_size, append_rest=True):
     note_sequence = []
     for n in note_array:
         if len(n) != 4:
@@ -16,6 +16,8 @@ def parse_notes(note_array, step_size):
         frequency = int(notes[note][octave])
         time = int(duration * step_size)
         note_sequence.append([frequency, time])
+        if append_rest and note[0] != "_":
+            note_sequence.append([0, floor(step_size/4)])
     return note_sequence
 
 
@@ -31,13 +33,14 @@ def play_next_sequence(t, sound, note_sequence, timer, pin):
         sound.deinit()
     timer.deinit()
     if note_sequence:
+        print(len(note_sequence), "notes left to play")
         note = note_sequence.pop(0)
         sound = PWM(pin, freq=note[0], duty=512) if note[0] > 0 else None
         timer.init(mode=Timer.ONE_SHOT, period=note[1], callback=(lambda t: play_next_sequence(t, sound, note_sequence, timer, pin)))
-A = "A_44"
-AL = "A_49"
-B = "B_44"
-BL = "B_49"
+A = "A_34"
+AL = "A_39"
+B = "B_34"
+BL = "B_39"
 C = "C_44"
 CL = "C_49"
 D = "D_44"
@@ -46,8 +49,8 @@ E = "E_44"
 EL = "E_49"
 F = "F_44"
 FL = "F_49"
-G = "G_44"
-GL = "G_49"
+G = "G_34"
+GL = "G_39"
 P = "__11"
 PL = "__19"
 

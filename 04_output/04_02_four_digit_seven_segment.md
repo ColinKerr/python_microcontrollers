@@ -1,6 +1,8 @@
 # Four Digit Seven Segment Display
 
-One 7-segment display is great, but how about 4 7-segment displays?
+One 7-segment display is great, but how about 4 7-segment displays?  
+
+How many more pins will we need to drive this display vs a single digit 7-segment display?
 
 ## New Concepts
 
@@ -32,7 +34,6 @@ Similarly, the second, third and fourth 7-segment displays will show visible con
 > Disconnect all power before building the circuit. Reconnect once verified.
 
 ![Wiring Diagram](../images/04_02_wiring_diagram.png)
-
 
 ### Schematic Diagram
 
@@ -70,7 +71,9 @@ except:
     pass
 ```
 
-This code sends one character to the display at a time.
+This code sends one character to the display at a time but it does it so quickly your mind sees all 4 digits lit at once.
+
+> **Debugging Tip** You may have wires connected to the wrong pins if one segment is not lit across all characters or if the wrong segments are lit.  Look at the wiring schematics to see which pin(s) control the missing or mixed upsegments, then focus on those wires when inspecting your wiring.
 
 ---
 
@@ -122,10 +125,12 @@ def led_display():
 
 ## Key Concepts
 
-- 
+- Using persistence of vision to drive displays with fewer pins.
 
 ## Further Exploration
 
+- Slow down the refresh rate (increase the sleep time in the for loop) from 1 to 100 ms.  What does this do?  Why?
+- Change the code to display the characters of your choosing.  Could you make it scroll a message longer than 4 characters across the display?
 
 
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 15.2
