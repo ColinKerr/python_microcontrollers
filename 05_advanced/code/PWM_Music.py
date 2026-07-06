@@ -2,7 +2,7 @@ from machine import Pin, PWM, Timer
 import time
 from MusicPlayer import *
 
-bpm = 140
+bpm = 120
 
 ms_pb = int((1000*60)//bpm)
 note_time = int(ms_pb // 4)
