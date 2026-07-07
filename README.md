@@ -12,6 +12,9 @@ Run this command in the terminal to clone this repository:
 git clone https://github.com/ColinKerr/python_microcontrollers.git
 ```
 
+Browse the course material online here: https://colinkerr.github.io/python_microcontrollers/
+
+For instructions to setup your computer and microcontroller for the first time go to [setup](./setup/)
 
 ## How to contribute
 
