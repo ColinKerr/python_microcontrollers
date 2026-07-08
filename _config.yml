@@ -6,18 +6,20 @@ navigation:
   - title: Getting Started
     link: /setup/getting_started.html
   - title: Module 1 - First Examples
-    link: /01_first_examples/
+    link: /01_first_examples/index.html
     sublist:
       - title: Blink (Built-in LED)
-        link: /01_first_examples/01_01_blinking_led.html
+        link: /01_first_examples/01_01_blink.html
       - title: Blink (External LED)
-        link: /01_first_examples/01_02_blinking_external_led.html
+        link: /01_first_examples/01_02_blink_external_led.html
       - title: Button and LED
         link: /01_first_examples/01_03_button_and_led.html
       - title: Button and LED On/Off Switch
-        link: /01_first_examples/01_04_button_and_led_on_off_switch.html
+        link: /01_first_examples/01_03a_button_and_led_on_off.html
+      - title: Breathing LED
+        link: /01_first_examples/01_04_breathing_led.html
   - title: Module 2 - Input and Output
-    link: /02_input_output/
+    link: /02_input_output/index.html
     sublist:
       - title: Flowing Light
         link: /02_input_output/02_01_flowing_light.html
@@ -34,7 +36,7 @@ navigation:
       - title: Soft Light
         link: /02_input_output/02_07_soft_light.html
   - title: Module 3 - Sensors
-    link: /03_sensors/
+    link: /03_sensors/index.html
     sublist:
       - title: Night Lamp
         link: /03_sensors/03_01_night_lamp.html
@@ -53,7 +55,7 @@ navigation:
       - title: MPU6050 Attitude Sensor
         link: /03_sensors/03_08_mpu6050_attitude_sensor.html
   - title: Module 4 - Output
-    link: /04_output/
+    link: /04_output/index.html
     sublist:
       - title: 7-Segment Display
         link: /04_output/04_01_seven_segment_display.html
@@ -72,7 +74,7 @@ navigation:
       - title: Hygrothermograph (DHT11 + LCD1602)
         link: /04_output/04_08_hygrothermograph_dht11_2.html
   - title: Module 5 - Advanced
-    link: /05_advanced/
+    link: /05_advanced/index.html
     sublist:
       - title: Interrupts
         link: /05_advanced/05_01_interrupts.html
