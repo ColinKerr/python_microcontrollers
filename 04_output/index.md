@@ -12,3 +12,7 @@ The goal of the fourth module is to drive interesting external devices via the m
 - [Servo Knob](./04_06_servo_knob.md)
 - [Stepper Motor](./04_07_stepper_motor.md)
 - [Hygrothermograph (DHT11 + LCD1602)](./04_08_hygrothermograph_dht11_2.md)
+
+Previous: [Module 3: Sensors](../03_sensors/index.md) | Next: [Module 5: Advanced](../05_advanced/index.md)
+
+[Home](../README.md)

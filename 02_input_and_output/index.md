@@ -10,3 +10,8 @@ The goal of the second module is to show how to read more complex inputs and cre
 - [Rainbow Light](./02_05_rainbow_light.md)
 - [Read the Voltage of a Potentiometer](./02_06_read_voltage_potentiometer.md)
 - [Soft Light](./02_07_soft_light.md)
+
+
+Previous: [Module 1: First Examples](../01_first_examples/index.md) | Next: [Module 3: Sensors](../03_sensors/index.md) 
+
+[Home](../README.md)
