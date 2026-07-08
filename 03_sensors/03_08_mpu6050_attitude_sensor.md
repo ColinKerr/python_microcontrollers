@@ -136,4 +136,6 @@ See [Class mpu6050](../reference/Class_mpu6050.md) for the full API reference.
 - Use the accelerometer's Z-axis value to detect whether the board is lying flat or tilted.
 - Combine X/Y accelerometer readings to estimate a tilt angle.
 
+[Back to Module](./index.md)
+
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 26.1

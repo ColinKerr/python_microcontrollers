@@ -172,4 +172,6 @@ Turns off all 8 PWM timers when the script stops, so PWM is free to be reinitial
 - Change `dutys` to make the meteor's tail longer or shorter.
 - Lower `delayTimes` to speed up the sweep.
 
+[Back to Module](./index.md)
+
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 4.2

@@ -120,4 +120,6 @@ See [Class neopixel](../reference/Class_neopixel.md) for the full API reference.
 - Change `brightness` to 1.0 for full intensity, or near 0 for a dim glow.
 - Change the divisor in `j*255//8` to make the rainbow repeat more than once across the strip.
 
+[Back to Module](./index.md)
+
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 6.2

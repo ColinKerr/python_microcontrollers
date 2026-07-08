@@ -127,4 +127,6 @@ See [Class ADC](../reference/Class_ADC.md) for the full API reference.
 - Try a different `atten` setting (e.g. `ADC.ATTN_6DB`) and see how the maximum readable voltage changes.
 - Print the voltage with fewer decimal places using `round(voltage, 2)`.
 
+[Back to Module](./index.md)
+
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 9.1

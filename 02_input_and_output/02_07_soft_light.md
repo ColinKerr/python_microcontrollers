@@ -114,4 +114,6 @@ See [Class ADC](../reference/Class_ADC.md) and [Class PWM(pin, freq)](../referen
 - Write a generic `remap()`-based brightness curve that feels more linear to the eye (human brightness perception isn't linear).
 - Replace the LED with a buzzer's `freq()` to make a "Theremin"-style pitch control.
 
+[Back to Module](./index.md)
+
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 10.1

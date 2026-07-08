@@ -166,4 +166,6 @@ The ADC's range (0–4095) is split at its midpoint (2048): values above it mean
 
 - Add a small dead zone around the center (e.g. ±50) so the motor stays fully stopped near the middle instead of creeping at very low speed.
 
+[Back to Module](./index.md)
+
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 17.2

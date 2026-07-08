@@ -129,4 +129,6 @@ See [Class Chip74HC595](../reference/Class_Chip74HC595.md) for the full API refe
 - Come up with your own animation by changing the entries in the list.
 - Modify the loop to turn on every combination of segments.
 
+[Back to Module](./index.md)
+
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 15.1

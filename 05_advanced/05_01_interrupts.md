@@ -81,4 +81,7 @@ When called on the rising edge (pin.value() == 1) the start ticks are saved.  Wh
 
 - 
 
+[Back to Module](./index.md)
+
+
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 21.1

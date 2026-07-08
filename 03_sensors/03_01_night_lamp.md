@@ -104,4 +104,6 @@ See [Class ADC](../reference/Class_ADC.md) and [Class PWM(pin, freq)](../referen
 - Invert the brightness response (LED dims in the dark instead).
 - Add a threshold so the LED only turns on below a certain light level, instead of dimming continuously.
 
+[Back to Module](./index.md)
+
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 11.1

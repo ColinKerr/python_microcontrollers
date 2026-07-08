@@ -116,4 +116,6 @@ See [Class ADC](../reference/Class_ADC.md) for the full API reference.
 - Map the raw 0–4095 X/Y values to a -100 to 100 range centered on the joystick's resting position.
 - Use the Z button press to reset a counter or toggle a mode.
 
+[Back to Module](./index.md)
+
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 13.1

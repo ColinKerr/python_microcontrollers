@@ -125,4 +125,6 @@ See [Class keypad](../reference/Class_keypad.md) for the full API reference.
 
 - Build a PIN-entry system: accumulate digits until `'#'` is pressed, then compare the sequence against a stored code.
 
+[Back to Module](./index.md)
+
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 22.1

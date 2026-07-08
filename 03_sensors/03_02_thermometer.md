@@ -136,4 +136,6 @@ See [Class ADC](../reference/Class_ADC.md) for the full API reference.
 - Print the temperature in Fahrenheit as well: `tempF = tempC * 9/5 + 32`.
 - Average several readings together to smooth out noise before printing.
 
+[Back to Module](./index.md)
+
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 12.1

@@ -100,5 +100,7 @@ Here is a schematic for this circuit
 
 ![Schematic Diagram](../images/01_02_schematic_diagram.png)
 
+[Back to Module](./index.md)
+
 
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 1.2

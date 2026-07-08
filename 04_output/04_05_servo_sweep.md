@@ -132,4 +132,6 @@ See [class myServo](../reference/class_myServo/Servo.md) for the full API refere
 
 - Change the step size (e.g. `range(0,180,5)`) for a faster, choppier sweep.
 
+[Back to Module](./index.md)
+
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 18.1

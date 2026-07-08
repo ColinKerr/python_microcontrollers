@@ -107,4 +107,6 @@ else:
 - Modify code so the LED is normally on and turns off when the button is pressed.~
 - Modify code so the LED blinks when button is pressed and is solid on when button is not pressed.
 
+[Back to Module](./index.md)
+
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 2.1

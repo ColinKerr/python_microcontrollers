@@ -132,5 +132,7 @@ def led_display():
 - Slow down the refresh rate (increase the sleep time in the for loop) from 1 to 100 ms.  What does this do?  Why?
 - Change the code to display the characters of your choosing.  Could you make it scroll a message longer than 4 characters across the display?
 
+[Back to Module](./index.md)
+
 
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 15.2

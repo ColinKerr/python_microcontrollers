@@ -91,4 +91,6 @@ See [class myServo](../reference/class_myServo/Servo.md) for the full API refere
 - Add smoothing (e.g. only update the servo if the angle changed by more than 2°) to reduce jitter from ADC noise.
 - Swap the potentiometer for the [Joystick](../03_sensors/03_03_joystick.md)'s X or Y axis to control the servo with a stick instead of a knob.
 
+[Back to Module](./index.md)
+
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 18.2

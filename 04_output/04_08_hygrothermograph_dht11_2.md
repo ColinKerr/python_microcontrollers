@@ -112,4 +112,6 @@ See [Class dht](../reference/Class_dht.md) and [Class I2cLcd](../reference/Class
 - Add a third reading (e.g. from the [Thermometer](../03_sensors/03_02_thermometer.md)'s thermistor) and cycle between display pages every few seconds.
 - Use `lcd.clear()` before each update if old digits linger when a new reading has fewer characters.
 
+[Back to Module](./index.md)
+
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 24.2

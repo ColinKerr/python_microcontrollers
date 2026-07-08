@@ -114,4 +114,6 @@ See [Class dht](../reference/Class_dht.md) for the full API reference.
 - Average several readings to smooth out occasional bad samples.
 - Combine this with [Soft Light](../02_input_and_output/02_07_soft_light.md)'s PWM technique to drive a fan or heater indicator based on temperature.
 
+[Back to Module](./index.md)
+
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 24.1

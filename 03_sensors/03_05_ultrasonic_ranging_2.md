@@ -73,4 +73,6 @@ See [Class hcsr04](../reference/Class_hcsr04.md) for the full API reference, inc
 - Try `SR.distanceMM()` for millimeter precision instead of `distance()`'s centimeters.
 - Try averaging multiple measurements to produce a more stable value.
 
+[Back to Module](./index.md)
+
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 21.2

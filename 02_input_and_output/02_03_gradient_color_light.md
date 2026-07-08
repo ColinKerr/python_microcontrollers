@@ -196,4 +196,6 @@ except:
 - Slow down or speed up the gradient by changing `time.sleep_ms(15)`.
 - Try stepping `i` by more than 1 each loop to see coarser color transitions.
 
+[Back to Module](./index.md)
+
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 5.2

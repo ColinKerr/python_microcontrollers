@@ -118,4 +118,6 @@ See [Class neopixel](../reference/Class_neopixel.md) for the full API reference.
 - Change `brightness` to make the cycle dimmer or brighter.
 - Add more colors to the `colors` list (e.g. purple, orange).
 
+[Back to Module](./index.md)
+
 > Adapted from [Python_Tutorial.pdf](../Python_Tutorial.pdf) Project 6.1
