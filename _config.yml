@@ -5,7 +5,7 @@ theme: jekyll-theme-minimal
 navigation:
   - title: Getting Started
     link: /setup/getting_started.html
-  - title: Module 1: First Examples
+  - title: Module 1 - First Examples
     link: /01_first_examples/
     sublist:
       - title: Blink (Built-in LED)
@@ -16,7 +16,7 @@ navigation:
         link: /01_first_examples/01_03_button_and_led.html
       - title: Button and LED On/Off Switch
         link: /01_first_examples/01_04_button_and_led_on_off_switch.html
-  - title: Module 2: Input and Output
+  - title: Module 2 - Input and Output
     link: /02_input_output/
     sublist:
       - title: Flowing Light
@@ -33,7 +33,7 @@ navigation:
         link: /02_input_output/02_06_read_voltage_potentiometer.html
       - title: Soft Light
         link: /02_input_output/02_07_soft_light.html
-  - title: Module 3: Sensors
+  - title: Module 3 - Sensors
     link: /03_sensors/
     sublist:
       - title: Night Lamp
@@ -52,7 +52,7 @@ navigation:
         link: /03_sensors/03_07_matrix_keypad.html
       - title: MPU6050 Attitude Sensor
         link: /03_sensors/03_08_mpu6050_attitude_sensor.html
-  - title: Module 4: Output
+  - title: Module 4 - Output
     link: /04_output/
     sublist:
       - title: 7-Segment Display
@@ -71,7 +71,7 @@ navigation:
         link: /04_output/04_07_stepper_motor.html
       - title: Hygrothermograph (DHT11 + LCD1602)
         link: /04_output/04_08_hygrothermograph_dht11_2.html
-  - title: Module 5: Advanced
+  - title: Module 5 - Advanced
     link: /05_advanced/
     sublist:
       - title: Interrupts
