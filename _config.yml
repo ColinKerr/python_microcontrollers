@@ -61,7 +61,7 @@ navigation:
         link: /04_output/04_02_four_digit_seven_segment.html
       - title: LCD1602 Display
         link: /04_output/04_03_lcd1602.html
-      - title: Motor & Driver: Control Motor with Potentiometer
+      - title: Motor & Driver - Control Motor with Potentiometer
         link: /04_output/04_04_motor_driver.html
       - title: Servo Sweep
         link: /04_output/04_05_servo_sweep.html
