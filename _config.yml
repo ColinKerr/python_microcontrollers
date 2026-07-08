@@ -1,17 +1,2 @@
 title: Introduction to Python and Microcontrollers
 description: A hands on course using the Freenove Ultimate Starter kit for ESP32-S3 model FNK0082 to teach basic Python, Microcontroller and electronics concepts.
-theme: jekyll-theme-minimal
-
-navigation:
-  - title: Getting Started
-    link: /setup/getting_started.html
-  - title: Module 1 - First Examples
-    link: /01_first_examples/index.html
-  - title: Module 2 - Input and Output
-    link: /02_input_and_output/index.html
-  - title: Module 3 - Sensors
-    link: /03_sensors/index.html
-  - title: Module 4 - Output
-    link: /04_output/index.html
-  - title: Module 5 - Advanced
-    link: /05_advanced/index.html
