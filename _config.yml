@@ -8,7 +8,7 @@ navigation:
   - title: Module 1 - First Examples
     link: /01_first_examples/index.html
   - title: Module 2 - Input and Output
-    link: /02_input_output/index.html
+    link: /02_input_and_output/index.html
   - title: Module 3 - Sensors
     link: /03_sensors/index.html
   - title: Module 4 - Output
