@@ -19,7 +19,7 @@ Before each use of the Pin module, please add the statement `from machine import
   - `trigger`:
     - `Pin.IRQ_FALLING`: interrupt on falling edge
     - `Pin.IRQ_RISING`: interrupt on rising edge
-    - `3`: interrupt on both edges
+    - `Pin.IRQ_RISING | Pin.IRQ_FALLING`: interrupt on both edges
   - `handler`: callback function
 
 > Pin is part ofthe machine module which is included with MicroPython

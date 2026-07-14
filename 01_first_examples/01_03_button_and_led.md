@@ -22,6 +22,8 @@ Left pins are always connected to each other; right pins are always connected to
 
 ### Wiring Diagram
 
+> Disconnect all power before building the circuit. Reconnect once verified.
+
 ![Wiring Diagram](../images/01_03_wiring_diagram.png)
 
 **Connections:**
@@ -36,10 +38,6 @@ Left pins are always connected to each other; right pins are always connected to
 ![Schematic Diagram](../images/01_03_schematic_diagram.png)
 
 The internal pull-up (`Pin.PULL_UP`) in software replaces the need for an external pull-up resistor in this case, but the schematic uses external resistors for clarity.
-
-> Disconnect all power before building the circuit. Reconnect once verified.
-
----
 
 ## Code
 
