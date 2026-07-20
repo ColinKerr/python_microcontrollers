@@ -52,8 +52,14 @@ def getTemperature(t):
     DHT.measure()
     print('temperature:',DHT.temperature(),'humidity:',DHT.humidity())
 
-timer = Timer(0)
-timer.init(mode=Timer.PERIODIC, period=2000, callback=getTemperature)
+try:
+    timer = Timer(0)
+    timer.init(mode=Timer.PERIODIC, period=10, callback=getTemperature)
+    
+    while True:
+        pass
+finally:
+    timer.deinit()
 ```
 
 ## Code Explanation
@@ -75,7 +81,21 @@ timer = Timer(0)
 timer.init(mode=Timer.PERIODIC, period=2000, callback=getTemperature)
 ```
 
-> Notice there is no `while True:` loop, it is not necessary because the timer runs until `deinit` is called on the timer or the microcontroller is reset.
+The timer is wrapped in a try/finally block to ensure the timer is always deinitialized when the program is stopped.
+
+```python
+try:
+    timer = Timer(0)
+    timer.init(mode=Timer.PERIODIC, period=2000, callback=getTemperature)
+    
+    while True:
+        pass
+finally:
+    timer.deninit()
+
+```
+
+> Notice the `while True:` loop is not necessary to read the sensor but it is necessary because the timer runs until `deinit` is called on the timer or the microcontroller is hard reset.  The `while True:` loop keeps the program from calling `timer.deinit()` before you sent a reset command by hitting the stop icon.  In a real use case your main program loop would take the place of this dummy `while True:` loop.
 
 ## Key Concepts
 
@@ -84,4 +104,5 @@ timer.init(mode=Timer.PERIODIC, period=2000, callback=getTemperature)
 
 ## Further Exploration
 
-- Adjust the period to make temperature measurements more frequent.  Can you make it so frequent that it fails?
+- Adjust the period to make temperature measurements more frequent.  Can you make it so frequent that it fails or no longer runs faster?
+- What happens if you remove the `timer.deinit()` then try to run the program more than once without a hard reset?
