@@ -2,14 +2,14 @@ from machine import Pin, PWM, Timer
 import time
 from MusicPlayer import *
 
-bpm = 120
+bpm = 140
 
 ms_pb = int((1000*60)//bpm)
 note_time = int(ms_pb // 4)
 
 
 
-voice_groups = load_voice_groups_from_file("nothing_else_matters.lines")
+voice_groups = load_voice_groups_from_file("animaniacs.lines")
 line_length = len(voice_groups[0][0])
 line_time = note_time * line_length
 

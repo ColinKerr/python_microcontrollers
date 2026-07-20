@@ -8,7 +8,7 @@ Unsure if this limit is a bug in the logic a limitation of the python library or
 Use `load_voice_groups_from_file` to load a song and to see the sheet music format.
 """
 class MusicPlayer:
-    def __init__(self, voice_groups, note_time, pins):
+    def __init__(self, voice_groups, note_time, pins, done_callback = None):
         self.voice_groups = voice_groups
         self.current_group = []
         self.note_time = note_time
@@ -19,53 +19,66 @@ class MusicPlayer:
         self.group_timer = Timer(0)
         self.pwms = [[0, None]] * len(pins)
         self.playing = False
+        self.done_callback = done_callback
+        self.start_next_group()
         print("PWM Count:", len(self.pwms))
     
     def start(self):
         self.playing = True
-        self.current_group = self.voice_groups.pop(0)
-        self.play_next_note()
-    
-    def play_next_note(self, t=None):
-        if t:
-            t.deinit()
+        self.group_timer.init(mode=Timer.PERIODIC, period=self.note_time, callback=self.play_next_note)
 
+    def stop(self):
+        self.playing = False
+        self.note_index = 0
+        self.group_index = 0
+        self.clean_up_pwms()
+
+    def pause(self):
+        self.clean_up_pwms()
+        self.group_timer.deinit()
+    
+    def play_next_note(self, t):
         if self.note_index >= len(self.current_group[0]):
             if not self.start_next_group():
                 self.clean_up_pwms()
                 print("Song done")
+                if self.done_callback is not None:
+                    self.done_callback()
+                self.playing = False
                 return
         
         if self.current_group:
-            for i, voice in enumerate(self.current_group):
-                if (i >= self.voice_limit):
-                    print("Voice limit reached, skipping voice", i + 1, "of", len(self.current_group))
+            for i in range(self.voice_limit):
+                if i >= len(self.current_group):
+                    pwm = self.pwms[i]
+                    if pwm[1] is not None:
+                        pwm[1].deinit()
+
                     continue
+                
+                voice = self.current_group[i]
                 note = voice[self.note_index]
                 pwm = self.pwms[i]
                 sustain = True
                 if pwm[0] != note and note != -1:
                     if pwm[1] is not None:
-                        #print("PWM Deinit old note", pwm[0], "on voice", i + 1)
                         pwm[1].deinit()
                     sustain = False
                 if sustain:
                     pass
                 elif note > 0:
-                    #print("PWM init, Playing note", note, "on voice", i + 1)
                     pwm = PWM(self.pins[i], freq=note, duty=512)
                     self.pwms[i] = [note, pwm]
                 else:
                     self.pwms[i] = [0, None]
             self.note_index += 1
-            self.group_timer.deinit()
-            self.group_timer.init(mode=Timer.ONE_SHOT, period=self.note_time, callback=lambda t: self.play_next_note(t))
 
     def start_next_group(self):
         self.note_index = 0
-        if self.voice_groups:
-            self.current_group = self.voice_groups.pop(0)
-            print(len(self.voice_groups), "voice groups left to play")
+        if self.group_index < len(self.voice_groups):
+            self.current_group = self.voice_groups[self.group_index]
+            self.group_index += 1
+            print(len(self.voice_groups) - self.group_index, "voice groups left to play")
             return True
         return False
     
@@ -73,6 +86,9 @@ class MusicPlayer:
         for pwm in self.pwms:
             if pwm[1] is not None:
                 pwm[1].deinit()
+        
+        if self.group_timer is not None:
+            self.group_timer.deinit()
         self.playing = False
 
 def load_voice_groups_from_file(file_path):
