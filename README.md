@@ -19,7 +19,7 @@ Browse the course material online here: https://colinkerr.github.io/python_micro
 - [Module 2 - Input and Output](./02_input_and_output/index.md)
 - [Module 3 - Sensors](./03_sensors/index.md)
 - [Module 4 - Output](./04_output/index.md)
-- [Module 5 - Advanced](./05_interrupts_and_timers/index.md)
+- [Module 5 - Advanced](./05_advanced/index.md)
 
 ## How to contribute
 

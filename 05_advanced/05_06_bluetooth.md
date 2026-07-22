@@ -41,7 +41,7 @@ This project has no circuit
 
 ### Microcontroller Code
 
-**File:** [05_interrupts_and_timers/code/ble_micro.py](./code/ble_micro.py)
+**File:** [05_advanced/code/ble_micro.py](./code/ble_micro.py)
 
 This code is very long so only excerpts will be shown here.  Also the module 'ble_advertising' will not be covered but it is used here.
 
@@ -74,7 +74,7 @@ This code will setup the microcontroller as a bluetooth device available for a c
 
 ### Computer Code
 
-**File:** [05_interrupts_and_timers/code/ble_computer.py](./code/ble_computer.py)
+**File:** [05_advanced/code/ble_computer.py](./code/ble_computer.py)
 
 ```python
 import asyncio
@@ -124,13 +124,13 @@ This code connects to the bluetooth device named 'ESP32S3'.  It will print any d
 ## How to run
 
 ### Microcontroller
-1. Open Thonny → `05_interrupts_and_timers/code/`.
+1. Open Thonny → `05_advanced/code/`.
 2. Right-click `ble_advertising.py` → **Upload to /** — wait for it to finish uploading to the ESP32-S3.
 2. Double-click `ble_micro.py`.
 3. Click **Run current script**.
 
 ### Computer
-1. In the terminal navigate to `05_interrupts_and_timers/code/`.
+1. In the terminal navigate to `05_advanced/code/`.
 2. Run the following command `python3 ble_computer.py`
 
 If the code fails to run saying the 'bleak' module cannot be found install it using this command then run again:

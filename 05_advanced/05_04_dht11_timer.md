@@ -42,7 +42,7 @@ For more info see [MicroPython Timer documentation](https://docs.micropython.org
 
 ## Code
 
-**File:** [05_interrupts_and_timers/code/Hydrothermograph_timer.py](./code/Hygrothermograph_timer.py)
+**File:** [05_advanced/code/Hydrothermograph_timer.py](./code/Hygrothermograph_timer.py)
 
 ```python
 from machine import Pin, Timer

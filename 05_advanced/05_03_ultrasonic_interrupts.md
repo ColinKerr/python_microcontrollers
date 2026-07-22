@@ -86,7 +86,7 @@ We need an integer so we will just pick 1 as it's the smallest non-zero value we
 
 ## Code
 
-**File:** [`05_interrupts_and_timers/code/ultrasonic.py](./code/ultrasonic.py)
+**File:** [`05_advanced/code/ultrasonic.py](./code/ultrasonic.py)
 
 ```python
 from machine import Pin, PWM
@@ -117,7 +117,7 @@ class Ultrasonic:
         return int(ticks*self.soundVelocity//2//10000)
 ```
 
-**File:** [`05_interrupts_and_timers/code/Ultrasonic_Ranging_Interrupt.py`](./code/Ultrasonic_Ranging_Interrupt.py)
+**File:** [`05_advanced/code/Ultrasonic_Ranging_Interrupt.py`](./code/Ultrasonic_Ranging_Interrupt.py)
 
 ```python
 from ultrasonic import Ultrasonic

@@ -53,7 +53,7 @@ class Button:
 
 This project uses two files, one for the Button class and one that uses the button class to implement the On/Off light behavior.
 
-**File:** [05_interrupts_and_timers/code/button.py](./code/button.py)
+**File:** [05_advanced/code/button.py](./code/button.py)
 
 ```python
 from machine import Pin
@@ -74,7 +74,7 @@ class Button:
             self.last_press_time = current_time
 ```
 
-**File:** [05_interrupts_and_timers/code/ButtonAndLed_OnOff_ButtonClass.py](./code/ButtonAndLed_OnOff_ButtonClass.py)
+**File:** [05_advanced/code/ButtonAndLed_OnOff_ButtonClass.py](./code/ButtonAndLed_OnOff_ButtonClass.py)
 
 ```python
 from button import Button
@@ -94,7 +94,7 @@ button = Button(13, reverseGPIO)
 ## How to Run
 
 ### Online
-1. Open Thonny → `05_interrupts_and_timers/code/`.
+1. Open Thonny → `05_advanced/code/`.
 2. Right-click `button.py` → **Upload to /** if they aren't already on the device.
 3. Double-click `ButtonAndLed_OnOff_ButtonClass.py`.
 4. Click **Run current script**

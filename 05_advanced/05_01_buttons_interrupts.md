@@ -50,7 +50,7 @@ The internal pull-up (`Pin.PULL_UP`) in software replaces the need for an extern
 
 ## Code
 
-**File:** [05_interrupts_and_timers/code/ButtonAndLed_OnOff_Interrupt.py](./code/ButtonAndLed_OnOff_Interrupt.py)
+**File:** [05_advanced/code/ButtonAndLed_OnOff_Interrupt.py](./code/ButtonAndLed_OnOff_Interrupt.py)
 
 ```python
 from machine import Pin

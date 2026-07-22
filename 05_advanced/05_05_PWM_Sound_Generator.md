@@ -59,7 +59,7 @@ Here is the tune transcribed into text.  The letter is the note and the number i
 
 ## Code
 
-**File:** [05_interrupts_and_timers/code/pwm_sounds.py](./code/pwm_sounds.py)
+**File:** [05_advanced/code/pwm_sounds.py](./code/pwm_sounds.py)
 
 ```python
 from machine import Pin, PWM
