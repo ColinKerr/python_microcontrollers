@@ -48,7 +48,7 @@ This code is very long so only excerpts will be shown here.  Also the module 'bl
 ```python
 def demo():
     ble = bluetooth.BLE()
-    p = BLESimplePeripheral(ble)
+    p = BLEBasePeripheral(ble)
 
     def on_rx(rx_data):
         print("\nRX", rx_data)
